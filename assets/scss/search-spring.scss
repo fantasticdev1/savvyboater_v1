@@ -1,0 +1,139 @@
+ body #searchspring-autocomplete_results {
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        border-radius: 0;
+        border: 1px solid #c5c5c5;
+        z-index: 9999;
+        margin: 0 auto;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        box-shadow: 0 0 5px #000;
+        width: 400px;
+        z-index: 999999;
+    }
+    body #searchspring-autocomplete_results li {
+        margin: 0;
+    }
+    body #searchspring-autocomplete_results em {
+        color: #c82032;
+        font-style: normal;
+    }
+    body #searchspring-autocomplete_results .ac_title:first-of-type,
+    body #searchspring-autocomplete_results .ac_title,
+    body #searchspring-autocomplete_results .ac_powered {
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        border-radius: 0;
+    }
+    body #searchspring-autocomplete_results .ac_title,
+    body #searchspring-autocomplete_results .ac_term_suggest {
+        padding: 10px;
+        color: #ffffff;
+        background: #103760;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    body #searchspring-autocomplete_results .ac_title {
+        margin: 0;
+        text-transform: uppercase;
+    }
+    body #searchspring-autocomplete_results .ac_term_suggest {
+        text-transform: none;
+    }
+    body #searchspring-autocomplete_results .ac_term_suggest em {
+        color: #fff;
+    }
+    body #searchspring-autocomplete_results .ac_powered {
+        display: none;
+    }
+    body #searchspring-autocomplete_results .ac_result_even {
+        background: #f1f1f1;
+    }
+    body #searchspring-autocomplete_results .ac_term_result {
+        padding: 5px 10px;
+    }
+    body #searchspring-autocomplete_results .ac_result.highlight,
+    body #searchspring-autocomplete_results .ac_result:hover {
+        background: #e1e1e1;
+    }
+    body #searchspring-autocomplete_results .ac_product_result {
+        padding: 10px;
+    }
+    body #searchspring-autocomplete_results .ac_product_result .image {
+        height: auto;
+        width: 60px;
+    }
+    body #searchspring-autocomplete_results .ac_product_result .info {
+        width: auto;
+        margin: 0;
+        float: none;
+        overflow: hidden;
+        padding: 0 0 0 20px;
+    }
+    body #searchspring-autocomplete_results .ac_term_result,
+    body #searchspring-autocomplete_results .ac_product_result .info div {
+        font-size: 12px;
+        line-height: 18px;
+        color: #131313;
+    }
+    body #searchspring-autocomplete_results .ac_product_result .info .price {
+    font-style: normal;
+    }
+    body #searchspring-autocomplete_results:before,
+    body #searchspring-autocomplete_results:after {
+        width: 0;
+        height: 0;
+        right: auto;
+    }
+    body #searchspring-autocomplete_results:before {
+        left: initial;
+        right: 16px;
+        top: -7px;
+        background: none;
+        border-right: 9px inset transparent;
+        border-left: 9px inset transparent;
+        border-bottom: 7px solid #c5c5c5;
+    }
+    body #searchspring-autocomplete_results:after {
+        position: absolute;
+        top: -6px;
+        right: 18px;
+        display: block;
+        content: '';
+        border-right: 7px inset transparent;
+        border-left: 7px inset transparent;
+        border-bottom: 6px solid #fff;
+    }
+    @media only screen and (max-width: 480px) {
+    body #searchspring-autocomplete_results {
+            left: 10px !important;
+            right: 10px !important;
+            width: auto;
+        }
+        body #searchspring-autocomplete_results .ac_term_result, body #searchspring-autocomplete_results .ac_product_result,
+        body #searchspring-autocomplete_results .ac_title, body #searchspring-autocomplete_results .ac_term_suggest {
+                padding: 5px;
+        }
+        body #searchspring-autocomplete_results .ac_product_result .image {
+                width: 50px;
+        }
+        body #searchspring-autocomplete_results .ac_product_result .image img {
+                max-height: 40px;
+        }
+        body #searchspring-autocomplete_results .ac_term_suggest {
+                font-size: 12px;
+        }
+        body #searchspring-autocomplete_results .ac_term_suggest, body #searchspring-autocomplete_results .ac_term_result,
+        body #searchspring-autocomplete_results .ac_product_result .info div {
+                line-height: 16px;
+        }
+        body #searchspring-autocomplete_results:before,
+        body #searchspring-autocomplete_results:after {
+            display: none;
+        }
+    }

@@ -1,0 +1,102 @@
+{{#partial "page"}}
+
+
+<main class="page">
+    <div class="PageContent page-content page-content--centered">
+        <div class="carverBrandTop">
+            <div class="brand-logo" style="float: left;">
+                <a href="/search.php?q=jif&amp;x=0&amp;y=0"><img src="https://cdn10.bigcommerce.com/s-uprkx/product_images/brand_page_logos/jif-logo.jpg"></a>
+            </div>
+            <img style="float: right;" src="{{cdn 'img/ladder.jpg'}}">
+            <p>
+                 Jif Ladders are known for their quality and selection.  Jif aluminum ladders are fabricated from 6005T-5 aluminum for strength and are rated for 750 lbs per step on many models.  Jif stainless ladders are fabricated from 316 stainless steel and are rated for 250 to 400 lbs weight capacity.  The Jif product range includes dock ladders, pontoon ladders, transom ladders and transom platforms, with several models available in each category.  Backed by a two year warranty Jif Ladders offer excellent value along with a top quality ladder or platform for your boating needs.  
+            </p>
+        </div>  
+        <div class="jifProducts shopbyBoatType carverBrandBoatType">
+            <div class="dottedHeader">
+                <span>Explore Jif Products</span>
+            </div>
+            <div class="shopBrandCategories">
+              <div class="shopBrandCategories category">
+                <a href="/transom-mount-ladders/#/?_=1&amp;filter.brand_name=JIF&amp;page=1">
+                  <img src="https://www.savvyboater.com/content/images/brand-pages/jif-1.png" alt="JIF Marine Transom Ladders" width="100%">
+                  <hr>
+                  <span>Transom Ladders</span>
+                </a>
+              </div>
+              <div class="shopBrandCategories category">
+                <a href="/dock-ladders/#/?_=1&amp;filter.brand_name=JIF&amp;page=1">
+                  <img src="https://www.savvyboater.com/content/images/brand-pages/jif-2.png" alt="JIF Marine Dock Ladders" width="100%">
+                  <hr>
+                  <span>Dock Ladders</span>
+                </a>
+              </div>
+              <div class="shopBrandCategories category">
+                <a href="/side-mount-ladders/#/?_=1&amp;filter.brand_name=JIF&amp;page=1">
+                  <img src="https://www.savvyboater.com/content/images/brand-pages/jif-3.png" alt="JIF Marine Gunwale Ladders" width="100%;">
+                  <hr>
+                  <span>Gunwale Ladders</span>
+                </a>
+              </div>
+              <div class="shopBrandCategories category">
+                <a href="/pontoon-ladders-ramps/#/?_=1&amp;filter.brand_name=JIF&amp;page=1">
+                  <img src="https://www.savvyboater.com/content/images/brand-pages/jif-4.png" alt="JIF Marine Pontoon Ladders" width="100%">
+                  <hr>
+                  <span>Pontoon Ladders</span>
+                </a>
+              </div>
+              <div class="shopBrandCategories category">
+                <a href="/dive-ladders/#/?_=1&amp;filter.brand_name=JIF&amp;page=1">
+                  <img src="https://www.savvyboater.com/content/images/brand-pages/jif-5.png" alt="JIF Marine Dive Ladders" width="100%">
+                  <hr>
+                  <span>Dive Ladders</span>
+                </a>
+              </div>
+              <div class="shopBrandCategories category">
+                <a href="/swim-platform-ladders/#/?_=1&amp;filter.brand_name=JIF&amp;page=1">
+                  <img src="https://www.savvyboater.com/content/images/brand-pages/jif-6.png" alt="JIF Marine Swim Platform Ladders" width="100%">
+                  <hr>
+                  <span>Swim Platform Ladders</span>
+                </a>
+              </div>
+              <div class="shopBrandCategories category">
+                <a href="/pontoon-seats-tables/#/?_=1&amp;filter.brand_name=JIF&amp;page=1">
+                  <img src="https://www.savvyboater.com/content/images/brand-pages/jif-7.png" alt="JIF Marine Pontoon Furniture" width="100%">
+                  <hr>
+                  <span>Pontoon Furniture</span>
+                </a>
+              </div>
+            </div>
+        </div> 
+        <div class="aboutJif">
+            <h4>About Jif</h4>
+            <p>
+                JIF Marine manufactures each of their high-quality products with strength and usability in mind, while managing to do so at the lowest prices possible.
+            </p>
+            <p>
+                With one of the most diverse product lines in the marine ladder industry, finding a product that meets your specific boating needs is incredibly easy.
+                Every product built by JIF is backed by fantastic customer service, which makes for a hassle-free buying experience that has earned JIF countless loyal customers over the years. 
+            </p>
+        </div>  
+    </div>
+
+    {{#if page.feed}}
+        <ul>
+            {{#each page.feed}}
+                <li>
+                    <h6><a href="{{url}}" target="_blank">{{title}}</a></h6>
+                    <p>{{content}}</p>
+                </li>
+            {{/each}}
+        </ul>
+    {{/if}}
+</main>
+
+{{/partial}}
+
+{{#partial "bannerbottom"}}
+
+
+{{/partial}}
+
+{{> layout/base}}

@@ -1,0 +1,59 @@
+---
+product:
+    videos:
+        limit: {{theme_settings.productpage_videos_count}}
+    reviews:
+        limit: {{theme_settings.productpage_reviews_count}}
+    related_products:
+        limit: {{theme_settings.productpage_related_products_count}}
+    similar_by_views:
+        limit: {{theme_settings.productpage_similar_by_views_count}}
+---
+{{#partial "page"}}
+    {{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
+
+    {{#each product.shipping_messages}}
+        {{> components/common/alert-info message}}
+    {{/each}}
+
+    <div itemscope itemtype="http://schema.org/Product">
+        {{> components/products/product-view schema=true  }}
+
+        {{#if product.videos.list.length}}
+            {{> components/products/videos product.videos}}
+        {{/if}}
+
+        {{#all settings.show_product_reviews (if theme_settings.show_product_reviews_tabs '!==' true)}}
+            {{> components/products/reviews reviews=product.reviews product=product urls=urls}}
+        {{/all}}
+
+        {{> components/products/tabs}}
+        {{#if banners.bottom}}
+            {{#if settings.data_tag_enabled}}
+                <div class="banners" data-banner-location="bottom">
+                    {{#each (limit banners.bottom_metadata 1)}}
+                        <div class="banner" data-event-type="promotion" data-entity-id="{{this.id}}" data-name="{{this.banner-name}}" data-position="{{this.location}}" data-name="{{this.banner-name}}">
+                            <div data-event-type="promotion-click">
+                                {{{this.content}}}
+                            </div>
+                        </div>
+                    {{/each}}
+                </div>
+            {{else}}
+                <div class="banners" data-banner-location="bottom">
+                    <div class="banner">
+                        {{{limit banners.bottom 1}}}
+                    </div>
+                </div>
+            {{/if}}
+
+        {{/if}}
+    </div>
+
+    <!-- Added 2017-09-29 by PKT-JW -->
+    <div class="xtraAttributesFun" style="display:none"></div>
+
+    <!-- Added 2017-12-06 by PKT-JW -->
+    <input type='hidden' class='xtraPriceFun' value='0' />
+{{/partial}}
+{{> layout/base}}

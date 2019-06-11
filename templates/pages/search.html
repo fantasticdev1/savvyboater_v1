@@ -1,0 +1,30 @@
+---
+product_results:
+    limit: {{theme_settings.searchpage_products_per_page}}
+---
+{{inject 'categoryTree' forms.search.category_options}}
+{{inject 'searchProductsPerPage' theme_settings.searchpage_products_per_page}}
+{{#partial "head"}}
+    {{#if pagination.product_results.previous}}
+        <link rel="prev" href="{{pagination.product_results.previous}}">
+    {{/if}}
+    {{#if pagination.product_results.next}}
+        <link rel="next" href="{{pagination.product_results.next}}">
+    {{/if}}
+{{/partial}}
+
+{{#partial "page"}}
+
+
+<section class="page">    
+    <aside class="page-sidebar">
+            <div class="searchspring-facets_container" style="min-height: 1px"></div>
+    </aside>
+    <main class="page-content">    
+            <div class="searchspring-results_container"></div>
+    </main>
+    
+</section>
+
+{{/partial}}
+{{> layout/base}}

@@ -1,0 +1,237 @@
+---
+category:
+    shop_by_price: true
+    products:
+        limit: {{theme_settings.categorypage_products_per_page}}
+---
+{{inject "categoryProductsPerPage" theme_settings.categorypage_products_per_page}}
+{{#partial "head"}}
+    {{#if pagination.category.previous}}
+        <link rel="prev" href="{{pagination.category.previous}}">
+    {{/if}}
+    {{#if pagination.category.next}}
+        <link rel="next" href="{{pagination.category.next}}">
+    {{/if}}
+{{/partial}}
+
+{{#partial "page"}}
+
+
+{{{snippet 'categories'}}}
+<div class="page">
+        <aside class="page-sidebar">
+                <div class="searchspring-facets_container" style="min-height: 1px"></div>
+        </aside>
+
+    <main class="page-content" id="product-listing-container">        
+
+        {{#unless theme_settings.hide_category_page_heading }}
+            <h1 class="title">{{category.name}}</h1>
+        {{/unless}}
+        {{#if banners.top}}
+            <div class="banners bottomfullWidthBanners" data-banner-location="top">
+                {{#each (limit banners.top_metadata 1)}}
+                <div class="banner" data-event-type="promotion" data-entity-id="{{this.id}}" data-name="{{this.banner-name}}" data-position="{{this.location}}" data-banner-id="{{this.banner-name}}">
+                    <div data-event-type="promotion-click">
+                        {{{this.content}}}
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        {{/if}}
+        <div class="searchspring-results_container">
+            {{{category.description}}}
+             {{#if category.products}}
+                {{> components/category/product-listing}}
+            {{else}}
+                <p>{{lang 'categories.no_products'}}</p>
+            {{/if}}
+        </div>
+        {{#if banners.bottom}}
+            {{#if settings.data_tag_enabled}}
+                <div class="banners" data-banner-location="bottom">
+                    {{#each (limit banners.bottom_metadata 1)}}
+                        <div class="banner" data-event-type="promotion" data-entity-id="{{this.id}}" data-name="{{this.banner-name}}" data-position="{{this.location}}" data-name="{{this.banner-name}}">
+                            <div data-event-type="promotion-click">
+                                {{{this.content}}}
+                            </div>
+                        </div>
+                    {{/each}}
+                </div>
+            {{else}}
+                <div class="banners" data-banner-location="bottom">
+                    <div class="banner">
+                        {{{limit banners.bottom 1}}}
+                    </div>
+                </div>
+            {{/if}}
+
+        {{/if}}
+    </main>
+</div>
+
+ <script type='text/javascript'>
+                var fields = {
+                    "aluminum-fishing-boats": ["boat_style", "centerline_length", "beam_width", "cover_accommodates", "fabric", "brand_name", "cover_type"],
+
+                    "back-to-back-boat-seats": ["seat_type", "base_color", "accent_color", "features", "mounts_to", "pedestal_type", "vinyl_grade", "brand_name", "abyc_rating"],
+
+                    "bass-boats": ["boat_style", "centerline_length", "beam_width", "cover_accommodates", "fabric", "colors", "brand_name", "cover_type"],
+
+                    "bass-boat-seats": ["seat_type", "base_color", "accent_color", "features", "mounts_to", "pedestal_type", "vinyl_grade", "brand_name", "abyc_rating"],
+
+                    "bay-style-boats": ["boat_style", "centerline_length", "beam_width", "cover_accommodates", "fabric", "colors", "brand_name", "cover_type"],
+
+                    "bimini-top-accessories": ["accessory_type", "brand_name", "frame_material", "fittings_material", "fabric"],
+
+                    "boat-cover-accessories": ["accessory_type", "brand_name"],
+
+                    "boat-fenders": ["boat_length", "fender_style", "polyform_models", "taylor_made_models", "hull_hugr_models"],
+
+                    "boat-helm-seats": ["seat_type", "base_color", "accent_color", "features", "mounts_to", "pedestal_type", "vinyl_grade", "brand_name", "abyc_rating"],
+
+                    "boat-seat-pedestals": ["pedestal_type", "ss_height", "brand_name", "abyc_rating"],
+
+                    "boats-with-towers": ["boat_style", "centerline_length", "beam_width", "cover_accommodates", "fabric", "colors", "brand_name", "cover_type"],
+
+                    "buoys": ["buoy_type", "buoyancy", "colors", "brand_name"],
+
+                    "cruisers": ["boat_style", "centerline_length", "beam_width", "cover_accommodates", "fabric", "colors", "brand_name", "cover_type"],
+
+                    "cruiser-runabout-seats": ["seat_type", "base_color", "accent_color", "features", "mounts_to", "pedestal_type", "vinyl_grade", "brand_name", "abyc_rating"],
+
+                    "cuddy-cabin-boats": ["boat_style", "centerline_length", "beam_width", "cover_accommodates", "fabric", "colors", "brand_name", "cover_type"],
+
+                    "deck-boats": ["boat_style", "centerline_length", "beam_width", "cover_accommodates", "fabric", "colors", "brand_name", "cover_type"],
+
+                    "de-icer-accessories": ["brand_name", "voltage"],
+
+                    "dive-ladders": ["ladder_type", "frame_material", "number_of_steps", "brand_name"],
+
+                    "dock-ladders": ["ladder_type", "frame_material", "number_of_steps", "brand_name"],
+
+                    "drift-boats": ["boat_style", "centerline_length", "beam_width", "cover_accommodates", "fabric", "colors", "brand_name", "cover_type"],
+
+                    "fender-covers-and-accessories": ["accessory_type", "colors", "fender_size", "line_length", "line_diameter", "boat_length", "brand_name"],
+
+                    "fishing-boat-seats": ["seat_type", "base_color", "accent_color", "features", "mounts_to", "pedestal_type", "vinyl_grade", "brand_name", "abyc_rating"],
+
+                    "inflatable-boat-bimini-tops": ["fabric", "width", "ss_height", "length", "frame_material", "fittings_material", "brand_name"],
+
+                    "jonboat-bimini-tops": ["fabric", "width", "ss_height", "length", "frame_material", "fittings_material", "brand_name"],
+
+                    "inflatable-boats": ["boat_style", "centerline_length", "beam_width", "cover_accommodates", "fabric", "colors", "brand_name", "cover_type"],
+
+                    "jet-boats-pwcs-paddle-boats-dinghys": ["boat_style", "centerline_length", "beam_width", "cover_accommodates", "fabric", "colors", "brand_name", "cover_type"],
+
+                    "jon-boat-covers": ["centerline_length", "beam_width", "boat_style", "cover_accommodates", "fabric", "colors", "brand_name", "cover_type"],
+
+                    "kasco-de-icers": ["product_selection", "voltage", "horsepower", "clearing_diameter"],
+
+                    "offshore-boat-seats": ["seat_type", "base_color", "accent_color", "features", "mounts_to", "pedestal_type", "vinyl_grade", "brand_name", "abyc_rating"],
+
+                    "outboard-motor-and-center-console-covers-etc": ["product_selection", "fabric", "colors", "brand_name"],
+
+                    "pontoon-boat-bimini-top": ["frame_type", "fabric", "length", "ss_height", "width", "frame_material", "fittings_material", "brand_name"],
+
+                    "pontoon-boats": ["boat_style", "centerline_length", "beam_width", "cover_accommodates", "fabric", "colors", "brand_name", "cover_type"],
+
+                    "pontoon-boat-ladders": ["ladder_type", "frame_material", "number_of_steps", "hook_size", "brand_name"],
+
+                    "pontoon-seats-tables": ["seat_type", "base_color", "accent_color", "features", "mounts_to", "pedestal_type", "vinyl_grade", "brand_name", "abyc_rating"],
+
+                    "power-house-ice-eaters": ["product_selection", "voltage", "horsepower", "clearing_diameter"],
+
+                    "powertech-propellers-honda-9_9-20-hp_pre-86": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-honda-9_9-20-hp_86-present": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-honda-25-30-hp_pre-94": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-honda-25-30-hp_94-present": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-honda-40-60-hp_all-years": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-honda-70-140-hp_pre-95": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-honda-70-140-hp_95-present": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-honda-115-350-hp_all-years": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-mercuiser-115-350-hp_pre-82": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-mercuiser-115-350-hp_82-present": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-mercuiser-bravo-2_all-years": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-mercury-mariner-9_9-20-hp_84-87": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-mercury-mariner-9_9-20-hp_88-present": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-mercury-mariner-9_9-20-hp_pre-86": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-mercury-mariner-9_9-20-hp_86-present": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-mercury-mariner-25-30-hp_pre-76": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-mercury-mariner-25-30-hp_76-93": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-mercury-mariner-25-30-hp_94-present": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-mercury-mariner-25-30-hp_all-years": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-mercury-mariner-40-60-hp_pre-93": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-mercury-mariner-40-60-hp_93-present": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-mercury-mariner-40-60-hp_all-years": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-mercury-mariner-70-140-hp_pre-61": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-mercury-mariner-70-140-hp_61-present": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-mercury-mariner-115-350-hp_pre-78": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-mercury-mariner-115-350-hp_78-present": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-suzuki-9_9-20-hp_pre-86": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-suzuki-9_9-20-hp_86-present": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-suzuki-25-30-hp_pre-83": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-suzuki-25-30-hp_83-present": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-suzuki-40-60-hp_all-years": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-suzuki-70-140-hp_pre-01": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-suzuki-70-140-hp_01-present": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-suzuki-115-350-hp_all-years": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-yamaha-9_9-20-hp_pre-84": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-yamaha-9_9-20-hp_84-present": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-yamaha-25-30-hp_pre-76": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-yamaha-25-30-hp_76-present": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-yamaha-40-60-hp_all-years": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-yamaha-70-140-hp_all-years": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-yamaha-115-350-hp_all-years": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-volvo-penta-115-350-hp_all-years": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-nissan-tohatsu-9_9-20-hp_pre-87": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-nissan-tohatsu-9_9-20-hp_87-present": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-nissan-tohatsu-25-30-hp_pre-84": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-nissan-tohatsu-25-30-hp_84-present": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-nissan-tohatsu-40-60-hp_pre-93": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-nissan-tohatsu-40-60-hp_93-98": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-nissan-tohatsu-40-60-hp_99-present": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-nissan-tohatsu-70-140-hp_pre-99": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-nissan-tohatsu-70-140-hp_99-present": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-evinrude-johnson-9_9-20-hp_pre-74": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-evinrude-johnson-9_9-20-hp_74-present": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-evinrude-johnson-25-30-hp_pre-76": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-evinrude-johnson-25-30-hp_76-present": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-evinrude-johnson-40-60-hp_75-present": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-evinrude-johnson-40-60-hp_pre-75": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-evinrude-johnson-70-140-hp_pre-02": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-evinrude-johnson-70-140-hp_02-present": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-evinrude-johnson-115-350-hp_pre-91": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+                    "powertech-propellers-evinrude-johnson-115-350-hp_91-present": ["num_blades", "diameter", "pitch", "rotation", "hub_type", "hub", "drive_type", "boat_style", "use"],
+
+                    "replacement-vinyl": ["vinyl_grade", "colors", "brand_name"],
+
+                    "runabouts-v-hull-tri-hull": ["boat_style", "centerline_length", "beam_width", "cover_accommodates", "fabric", "colors", "brand_name", "cover_type"],
+
+                    "shop-all-de-icers": ["product_selection", "voltage", "horsepower", "clearing_diameter", "brand_name"],
+
+                    "gunwale-ladders": ["ladder_type", "frame_material", "number_of_steps", "hook_size", "brand_name"],
+
+                    "standard-bimini-tops": ["width", "ss_height", "length", "fabric", "frame_material", "fittings_material", "brand_name"],
+
+                    "swim-platform-ladders": ["ladder_type", "frame_material", "number_of_steps", "brand_name"],
+
+                    "tournament-ski-boats": ["boat_style", "centerline_length", "beam_width", "cover_accommodates", "fabric", "colors", "brand_name", "cover_type"],
+
+                    "tower-bimini-tops": ["fabric", "width", "frame_material", "fittings_material", "ss_height", "length", "brand_name"],
+
+                    "transom-boat-ladders": ["ladder_type", "frame_material", "number_of_steps", "hook_size", "motor_type", "brand_name"],
+
+                    "v-hull-fishing-boats": ["boat_style", "centerline_length", "beam_width", "cover_accommodates", "fabric", "colors", "brand_name", "cover_type"],
+
+                    "whaler-style-boats": ["boat_style", "centerline_length", "beam_width", "cover_accommodates", "fabric", "colors", "brand_name", "cover_type"],
+
+                    "winterization": ["product_selection"],
+
+                    "navigloo-boat-shelters": ["tarp_width", "tarp_length", "frame_material", "fabric", "cover_accommodates", "boat_length"]
+                }
+
+            </script>
+
+{{/partial}}
+{{> layout/base}}

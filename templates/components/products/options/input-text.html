@@ -1,0 +1,14 @@
+<div class="productAttributeRow productAttributeConfigurableEntryText borderbottom form-field" data-product-attribute="input-text">
+    <div class="productAttributeLabel">
+        <label class="form-label form-label--alternate form-label--inlineSmall" for="attribute_text_{{id}}">
+            <span class="name">{{ this.display_name }}:</span>
+
+            {{#if required}}
+                <small>{{lang 'common.required'}}</small>
+            {{/if}}
+        </label>
+    </div>
+    <div class="productAttributeValue">
+        <input class="customCheckBox form-input form-input--small" type="text" id="attribute_text_{{id}}" name="attribute[{{this.id}}]" value="{{this.prefill}}" {{#if required}}required{{/if}}>
+    </div>
+</div>

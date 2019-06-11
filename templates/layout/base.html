@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html class="no-js" lang="{{ locale_name }}">
+    <head>
+        <title>{{ head.title }}</title>
+        {{{ resourceHints }}}
+        {{{ head.meta_tags }}}
+        {{{ head.config }}}
+        {{#block "head"}} {{/block}}
+
+        <link href="{{ head.favicon }}" rel="shortcut icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <script>
+            // Change document class from no-js to js so we can detect this in css
+            document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+        </script>
+
+        {{ getFontsCollection }}
+        {{{stylesheet '/assets/css/theme.css'}}}
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+        {{{stylesheet '/assets/css/white.css'}}}
+        {{{stylesheet '/assets/css/dm-custom.css'}}}
+        {{{stylesheet '/assets/css/old-styles.css'}}}
+        {{{stylesheet '/assets/css/search-spring.css'}}}
+        {{{stylesheet '/assets/css/ex.css'}}}
+
+        {{{head.scripts}}}
+        {{{head.rsslinks}}}
+
+        {{inject 'themeSettings' theme_settings}}
+        {{inject 'genericError' (lang 'common.generic_error')}}
+        {{inject 'maintenanceMode' settings.maintenance}}
+        {{inject 'urls' urls}}
+        {{inject 'secureBaseUrl' settings.secure_base_url}}
+        {{inject 'cartId' cart_id}}
+        {{inject 'template' template}}
+        {{{snippet 'htmlhead'}}}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+        <!-- SearchSpring Integration -->
+        <!--<script src="//cdn.searchspring.net/search/v3/js/searchspring.catalog.js?m6tfby" search="search_query_adv" category="{{category.name}}"></script>-->
+        <script src="//cdn.searchspring.net/sites/savvyboater.com/js/searchspring.catalog.bundle.js?m6tfby" search="search_query_adv" category="{{category.name}}"></script>   
+    </head>
+    <body id="pageType_{{page_type}}">
+        {{{snippet 'header'}}}
+        <svg data-src="{{cdn 'img/icon-sprite.svg'}}" class="icons-svg-sprite"></svg>
+
+        {{#and settings.privacy_cookie settings.is_eu_ip_address}}
+            {{> components/common/cookie}}
+        {{/and}}
+
+        {{> components/common/header }}
+        {{> components/common/body }}
+        {{> components/common/footer }}
+
+        <script>window.__webpack_public_path__ = "{{cdn 'assets/dist/'}}";</script>
+        <script src="{{cdn 'assets/dist/theme-bundle.main.js'}}"></script>
+        <script>
+            // Exported in app.js
+            window.stencilBootstrap("{{page_type}}", {{jsContext}}).load();
+        </script>
+        <!-- SearchSpring IS Tracking -->
+        <script type="text/javascript">
+            var product_code = "{{product.sku}}";
+        </script>
+        {{{footer.scripts}}}
+        <script src="/content/scripts/js.cookie.js" defer></script>
+        <script src="/content/scripts/tooltips.js" defer></script>
+        <script src="/content/scripts/dw_tooltip/dw_tooltip_c.js" defer></script>
+        <script src="/content/scripts/UpsellClass.js" defer></script>
+        <script src="/content/scripts/initUpsell.js" defer></script>
+        <script src="/content/scripts/etc-onload.js" defer></script>
+        <script src="/content/scripts/BannerClass.js" defer></script>
+        <script type="text/javascript">
+        $(document).ready(function() {
+         Banner.checkForBanners();
+        });
+        </script>
+
+        {{{snippet 'footer'}}}
+    </body>
+</html>

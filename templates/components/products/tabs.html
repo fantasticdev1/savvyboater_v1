@@ -1,0 +1,21 @@
+{{#or product.related_products product.similar_by_views }}
+    <h2 class="page-heading">{{lang 'You May Also Like...' }}</h2>
+    {{#if product.related_products}}
+        <ul class="productGrid productGrid--maxCol4">
+            {{#each product.related_products}}
+                <li class="product">
+                        {{>components/products/card settings=../settings theme_settings=../theme_settings customer=../customer event="list" position=(add @index 1)}}
+                </li>
+            {{/each}}
+        </ul>
+    {{else if product.similar_by_views}}
+        <ul class="productGrid productGrid--maxCol4">
+            {{#each product.similar_by_views}}
+                <li class="product">
+                        {{>components/products/card settings=../settings theme_settings=../theme_settings customer=../customer event="list" position=(add @index 1)}}
+                </li>
+            {{/each}}
+        </ul>
+    {{/if}}
+{{/or}}
+

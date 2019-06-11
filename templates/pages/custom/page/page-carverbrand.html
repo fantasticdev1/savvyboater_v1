@@ -1,0 +1,129 @@
+{{#partial "page"}}
+
+
+<main class="page">
+    <div class="PageContent page-content page-content--centered">
+        <div class="carverBrandTop">
+            <div class="brand-logo">
+                <img src="https://www.savvyboater.com/content/images/category-pages/carver-logo-transparent.png" style="width:100%;max-width:300px;">
+            </div>
+            <img style="float: right;" src="{{cdn 'img/boat.jpg'}}">
+            <p>
+                Carver boat covers and bimini tops are expertly crafted in the USA in their state-of-the-art facility in Landrum, South Carolina, ensuring quality and promptness for each of their products. With over 30 years of experience fabricating products that withstand the rigors of boating, Carver knows the best way to keep your boat safe from the elements in all seasons. Carver provides industry leading warranties and a variety of styles to fit thousands of boats and offers FREE tie downs & storage bag with every cover. 
+            </p>
+        </div>        
+        <div class="find-your-boat whitebackground brandCarver">
+            <div class="dottedHeader">
+                <span>find your boat cover or bimini top</span>
+            </div>
+            <div class="find-boat-inner">
+                <div class="finders-props">
+                    <div class="findersMainCont NewCoverFinders">
+                        <div class="FinderContainer CarverCoverFinder">
+                            <h4>Find Your Boat Cover by Boat Make and Model</h4>
+                            <div class="finderImg">
+                                <br><img class="BoatImage" src="https://www.savvyboater.com/content/images/brand-pages/carvercol4.png" alt="Carver Boat Covers" data-pin-nopin="true">
+                            </div>
+                            <div class="finderText">
+                                <ul>
+                                    <li>Free tie downs and storage bag</li>
+                                    <li>Wide range of fabrics</li>
+                                    <li>Made in USA</li>
+                                </ul>
+                                <!-- SearchSpring Finder Code Here -->
+                                <iframe src="https://www.savvyboater.com/content/finders/covers-hierarchy_carver-2.html" frameborder="0" height="180" width="290"></iframe>
+                                <!-- End SearchSpring Finder Code -->
+                                
+                            </div>                      
+                        </div>
+                        
+                        <div class="FinderContainer WestlandCoverFinder">
+                            <h4>Find Your Bimini Top by Boat Make and Model </h4>
+                            <div class="finderImg">
+                                <br><img class="BoatImage" src="/content/images/brand-pages/bimini-icon.png" alt="Carver Bimini Tops" data-pin-nopin="true">
+                                
+                            </div>
+                            <div class="finderText">
+                                <ul>
+                                    <li>Free storage boot</li>
+                                    <li>Made in USA</li>
+                                </ul></div>
+                                <div class="finderText">
+                                <!-- SearchSpring Finder Code Here -->
+                                <iframe src="https://www.savvyboater.com/content/finders/bimini-hierarchy.html?filter=Carver" style="width: 290px;display: table;height: 180px;margin:0 auto;" frameborder="0"></iframe>
+                                <!-- End SearchSpring Finder Code -->
+                            </div> </div>
+                            
+                        <div class="FinderContainer CarverCoverFinder">
+                           <h4>Can't Find Your Boat Model?</h4>
+                           <p align="center"><br><br><h5 align="center">Search by <a href="#bytype">Boat Type</a> below</h5></p>
+                        </div>
+                        <div class="FinderContainer WestlandCoverFinder">    
+                            <h4>Find Your Bimini Top by Dimensions</h4>
+                            <div class="finderImg">
+                                <img class="BoatImage"  src="{{cdn 'img/boat-frame.jpg'}}">
+                            </div>
+                            <div class="finderText">
+                                <!-- SearchSpring Finder Code Here -->
+                                <iframe src="https://www.savvyboater.com/content/finders/bimini-product-1.html" style="width: 290px;display: table;height: 180px;margin:0 auto;" frameborder="0"></iframe>
+                                <!-- End SearchSpring Finder Code -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a id="bytype"></a>
+            <div class="shopbyBoatType carverBrandBoatType">
+                <div class="dottedHeader aligntextRight">
+                    <span>Shop By Boat Type</span>
+                </div>                
+                {{> components/common/boat-types}}
+            </div> 
+            <div class="whyCarver">
+                <h4>Why Carver?</h4>
+                <p>Carver is committed to American jobs. Not only do they manufacture all of their boat covers at their state-of-the-art facility in Landrum, South Carolina, but almost 90% of their components and materials are also manufactured right here in the USA, while their competitors have increasingly moved manufacturing offshore. Dedicated to fit, quality, service, and American jobs for over 30 years, Carver Industries is not only an industry leader, but a brand you can trust.</p>
+<p>Carver Industries offers the largest selection of fabrics with 7 types in 36 colors. All fabrics are crafted to be breathable for the well-being of your boat and its interior.</p>
+        
+            </div>
+        </div>
+    </div>
+
+    {{#if page.feed}}
+        <ul>
+            {{#each page.feed}}
+                <li>
+                    <h6><a href="{{url}}" target="_blank">{{title}}</a></h6>
+                    <p>{{content}}</p>
+                </li>
+            {{/each}}
+        </ul>
+    {{/if}}
+</main>
+
+{{/partial}}
+
+{{#partial "bannerbottom"}}
+<div class="videos-sectionCarver">
+    <div class="container">        
+        <h4>Check out our Video Library</h4>
+        <div class="videosCont">
+            <div class="cover-col1" style="height: auto;">
+                <iframe style="border: 2px solid #fff;" width="100%" height="169" src="https://www.youtube.com/embed/ogrcb0a6NHA?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+                <h3>Carver Boat Covers:<br>Fit &amp; Features</h3>
+            </div>
+            <div class="cover-col2" style="border: none; height: auto;">
+                <iframe style="border: 2px solid #fff;" width="100%" height="169" src="https://www.youtube.com/embed/vPQwtaNhM38?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+                <h3>How to Measure Your<br>Boat for a Cover</h3>
+            </div>
+            <div class="cover-col3" style="border: none; height: auto;">
+                <iframe style="border: 2px solid #fff;" width="100%" height="169" src="https://www.youtube.com/embed/3jYZWtK76vU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+                <h3>How to Assemble<br>Boat Cover Support Poles</h3>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+{{/partial}}
+
+{{> layout/base}}

@@ -1,0 +1,386 @@
+---
+category:
+    shop_by_price: true
+    products:
+        limit: {{theme_settings.categorypage_products_per_page}}
+---
+{{inject "categoryProductsPerPage" theme_settings.categorypage_products_per_page}}
+{{#partial "head"}}
+    {{#if pagination.category.previous}}
+        <link rel="prev" href="{{pagination.category.previous}}">
+    {{/if}}
+    {{#if pagination.category.next}}
+        <link rel="next" href="{{pagination.category.next}}">
+    {{/if}}
+{{/partial}}
+
+{{#partial "page"}}
+
+{{#if category.image}}
+    <img class="lazyload" data-sizes="auto" src="{{cdn 'img/loading.svg'}}" data-src="{{getImage category.image 'zoom_size'}}">
+{{/if}}
+{{{snippet 'categories'}}}
+<div class="page">
+    <main class="page-content" id="product-listing-container">
+        <div class="BoatCovers"><br>
+            <div class="CategoryDesc">
+                <img src="/product_images/uploaded_images/prop-3-blade.jpg">
+                <div class="categoryText">
+                    {{#unless theme_settings.hide_category_page_heading }}
+                        <h1 class="page-heading">{{category.name}}</h1>
+                    {{/unless}}
+                    <p><br>Choosing the right boat propeller is the single most important selection you will make when rigging your boat. Boat propellers come in many different shapes and sizes to accommodate specific performance requirements.  Whether you need a propeller for fishing, towing, or wake boarding, we make it easy to make your boat prop selection with our convenient prop guide and prop selectors.</p>
+                </div>
+                <div class="clear"><br></div>
+
+            </div>
+         
+<!--<div class="finders-props">
+                    <div class="finders-props-solas-michigan">
+                      <h3>Solas & Michigan Wheel</h3>
+                      <div class="finder-props-solas-michigan_outboard">
+                        <p>Outboard</p>
+                        <img src="/content/images/category-pages/prop-finder-1.png" alt="outboard boat motor" data-pin-nopin="true">-
+                        
+                        <iframe class="transparent" src="//www.savvyboater.com/content/finders/props-hierarchy_outboard-2.html" seamless="seamless" frameborder="0" height="172" width="285"></iframe>
+                        
+                      </div>
+<img class="finders-props-divider" src="/content/images/brand-pages/vertical-line-white.jpg" data-pin-nopin="true">
+                      <div class="finder-props-solas-michigan_sterndrive">
+                        <p>Stern Drive</p>
+                        <img src="/content/images/category-pages/prop-finder-2.png" alt="stern drive boat motor" data-pin-nopin="true">
+                        
+                        <iframe src="//www.savvyboater.com/content/finders/props-hierarchy_sterndrive-2.html" seamless="seamless" frameborder="0" height="172" width="285"></iframe>
+                       
+                      </div>
+                    </div>
+                    <div class="finder-props-powertech">
+                      <h3>PowerTech</h3>
+                      <p>All Motor Types</p>
+                      <img src="/content/images/category-pages/prop-finder-3.png" alt="stainless steel three-blade and four-blade boat propellers">
+                      <iframe src="//www.savvyboater.com/content/finders/props-hierarchy_powertech-2.html" seamless="seamless" frameborder="0" height="172" width="285"></iframe>
+                    </div>
+                  </div>
+</div>
+</div>-->
+
+<div class="main-div">
+    <div class="dottedHeader">
+                        <span>find your boat propeller</span>
+                    </div>
+<div class="cover-fit-columns">
+<div class="cover-col1">
+<h2 align="center"><a href="https://www.savvyboater.com/solas-boat-propellers/">SOLAS</a></h2>
+
+<ul><li>Best value option</li>
+<li>Largest aluminum prop selection</li>
+<li>Leading choice for Honda, Yamaha, Suzuki, & Tohatsu motors</li>
+<li><a href="https://www.savvyboater.com/solas-boat-propellers/">Learn more</a> about Solas props outboard models</li></ul>
+<div style="text-align: center; margin-bottom: 28px;"><a class="button" href="https://www.savvyboater.com/solas-boat-propellers/">Find Prop</a></div>
+</div>
+<div class="cover-col2">
+<h2 align="center"><a href="https://www.savvyboater.com/michigan-wheel-boat-propellers/">MICHIGAN WHEEL</a></H2>
+
+<ul><li>Best choice for OEM replacement</li>
+<li>Easiest to repair</li>
+<li>Strong choice for Johnson, Evinrude, & Mercury motors</li>
+<li><a href="https://www.miwheel.com/news/entry/behind-the-scenes-at-michigan-wheel/">Watch</a> how Michigan Wheel propellers are made</li></ul>
+<div style="text-align: center; margin-bottom: 28px;"><a class="button" href="https://www.savvyboater.com/michigan-wheel-boat-propellers/">Find Prop</a></div></span>
+</div>
+<div class="cover-col3">
+<h2 align="center"><a href="https://www.savvyboater.com/powertech-boat-propellers/">POWERTECH</a></h2>
+
+<ul><li>Wide range of performance options</li>
+<li>Our premium stainless steel line</li>
+<li>Large selection across most motors</li>
+<li><a href="http://www.ptprop.com/index.php?option=com_content&task=view&id=52&Itemid=51">Learn about prop selection science</a> with PowerTech<br><br></li></ul>
+    <p style="text-align: center; margin-bottom: 28px;"><a class="button" href="https://www.savvyboater.com/powertech-boat-propellers/">Find Prop</a></div>
+</div>
+</div></div>
+    <a id="more"></a>
+<div class="main-div" style="display: table; padding-top:0;"><div class="dottedHeader aligntextRight">
+                    <span>boat propeller help guide</span>
+                </div>  
+<p style="margin-top: 20px;">The design, shape, size and material of the boat prop you choose will make all the difference in maximizing the performance of your boat. Choosing the right boat propeller for your vessel can be confusing when you see all the options available for hub, pitch, diameter and blade. Read through our comprehensive guides below to help you make an excellent propeller choice from the start. 
+<ul><li><a href="#choose">Choosing the Right Prop for Your Engine</a></li>
+<li><a href="#performance">Testing your Propeller's Performance</a></li>
+<li><a href="#basics">Pitch and Diameter Basics</a></li>
+<li><a href="#materials">Aluminum vs Stainless Steel</a></li>
+<li><a href="#blades">3-Blade vs 4-Blade Options</a></li>
+<li><a href="#hubs">Pressed-in Hub vs Interchangeable Hub</a></li>
+<li><a href="#structures">Propeller, Cup, Rotation and Rake</a></li>
+<li><a href="#maintenance">Maintaining Your Prop</a></li>
+</ul>
+</p>
+
+<section class="ac-container">
+<a id="choose"></a>
+    <p class="labelborder">Choosing the Right Prop for Your Engine</p>
+        
+                    <p>In order to maximize your boat’s performance and fuel efficiency, the right prop has to be matched with your particular boat’s engine. 
+                    Determining the correct size and style of boat prop will keep your engine operating within its recommended RPM range. 
+                    This not only allows optimal horsepower to be applied to the water, but also makes for improved handling.</p>
+                    <p>The kind of prop your engine needs depends largely on how you’re using your boat. 
+                    Whether fishing, cruising, or water skiing, different applications place different loads on your engine. 
+                    Regardless of application, the key is to keep your engine within its factory-recommended wide-open throttle (WOT) RPM ratings, which are easily found in your owner’s manual. 
+                    Selecting a prop with the right pitch, diameter, rake, surface area, and contour for your engine will keep you within your RPM range.</p>
+                    <p>For an informative read about how the correct propeller can change your boat’s performance, take a look at <a href="http://www.popularmechanics.com/adventure/outdoors/a5650/1276976/" target="_blank">this Popular Mechanics’ article</a> that compares six different props using the same boat.</p>
+                    <p>Already have an idea of what you’re looking for? Get started now by using our handy <a href="#PropSelector">Prop Selector Tool</a> to narrow your search results. 
+                    Our Prop Selector will choose exactly what you need from our wide selection of boat props from quality brands like <a href="https://www.savvyboater.com/powertech-boat-propellers/" target="_blank">PowerTech</a>, <a href="https://www.savvyboater.com/solas-boat-propellers/" target="_blank">Solas</a>, and <a href="https://www.savvyboater.com/michigan-wheel-boat-propellers/" target="_blank">Michigan Wheel</a>.</p>
+
+<a id="performance"></a>
+<p class="labelborder">Testing Your Propeller's Performance</p>
+
+                    <p>Testing your propeller’s performance is simple, not to mention fun. 
+                    When you have the right propeller for your boat, and it’s functioning properly, your boat’s engine should operate as expected. 
+                    This means that your engine should run within the manufacturer’s designated RPM when running at Wide Open Throttle (WOT). 
+                    If this doesn’t occur, you probably need a new prop for your boat.</p>
+                    <h3>Step-By-Step:</h3>
+                        <ol>
+                            <li>Make sure your gas tank is full, but that the overall load in your boat is “normal.” 
+                            Do not test with the maximum number of people on board, but make sure the load accurately mimics what you normally carry.</li>
+                            <li>Run your boat for at least 5 minutes to ensure your engine is properly warmed up.</li>
+                            <li>Find a wide open piece of water with little or no other boat traffic.</li>
+                            <li>Give your engine full throttle and get it up to maximum speed.</li>
+                            <li>When at maximum speed, note and record your RPM.</li>
+                            <li>Take a run in the other direction, repeating steps three through five. 
+                            Taking two measurements and averaging them ensures a more accurate reading by eliminating factors such as wind and current.</li>
+                        </ol>
+
+<a id="basics"></a>
+<p class="labelborder">Pitch and Diameter Basics</p>
+
+    <div class="propDiamPitch">
+                    <h3>Diameter</h3>
+                    <div>
+                        <p>Prop diameter is the distance it takes a blade to rotate from a 3 o’clock position to a 9 o’clock position (a semi-circle). 
+                        To determine your prop’s diameter, measure from the outside edge of one blade straight into the center of the prop shaft, then multiply that number by two. 
+                        This is your diameter.</p>
+                        <p>Changes in diameter can affect the way a boat carries itself. 
+                        Usually, the lower the pitch (which we’ll talk about next), the greater the diameter.</p>
+                        <p>A larger diameter is generally better for:</p>
+                        <ul>
+                            <li>Pushing heavy loads</li>
+                            <li>Maneuvering at low speeds</li>
+                            <li>Getting excellent hole shot (thanks to expanded grip on the water)</li>
+                        </ul>
+                        <p>Smaller diameter propellers spin faster, making them a good choice for performance boats that need higher top-end speeds.</p>
+                    </div>
+                    <h3>How to Identify Your Diameter & Pitch</h3>
+                 
+                    <div>
+                        <p>In most cases, the diameter and pitch will be stamped on the hub of your prop. 
+                        Large or small, diameter is the first number listed. 
+                        A prop noted as 14 x 17 x 3 means the prop has a diameter of 14", a pitch of 17", and has three blades. <a href="https://cdn3.bigcommerce.com/s-uprkx/product_images/uploaded_images/prop-diameter-pitch.jpg" target="_blank">Click to see image.</a></p>
+                    </div>
+                    <h3>Pitch</h3>
+                        <p>Pitch controls your engine’s RPM (revolutions per minute) and is the final “gear ratio” adjustment on any given boat. 
+                        It also affects the performance of a propeller more than any other aspect.</p>
+                        <p>Specifically, pitch is "the distance a propeller would move in one full revolution if it were moving through a soft solid, like a screw through wood,” assuming there is no slippage. 
+                        For example, a 21-pitch propeller would move forward 21 inches in one revolution.</p>
+                        <p>Propeller slip (slippage) is the difference between actual and theoretical propeller travel. 
+                        Slip happens with every propeller, though the amount shifts depending on overall design.</p>
+                        <p><strong>High Pitch</strong> (lower RPM)</p>
+                        <ul>
+                            <li>Faster at top-end speeds</li>
+                            <li>Typically used on larger boats</li>
+                            <li>If pitch is too high for your engine, it will "lug" the engine, reducing both top speed and performance</li>
+                        </ul>
+                        <p><strong>Low Pitch</strong> (higher RPM)</p>
+                        <ul>
+                            <li>Increases acceleration</li>
+                            <li>Improves fuel efficiency</li>
+                            <li>Increases pulling power</li>
+                            <li>Typically used on smaller boats</li>
+                            <li>If your pitch is too low, the engine will exceed its specified RPM at top-end speeds</li>
+                        </ul>
+                        
+                        <p><a href="https://cdn3.bigcommerce.com/s-uprkx/product_images/uploaded_images/prop-pitch.jpg?t=1473362856" target="_blank">Click to see image.</a><br><br><strong>**Note: Sustained operation with a pitch that’s either too low or too high can cause damage to your engine.</strong></p>
+                        <p>For more in-depth answers to specific inquiries about pitch, like “what’s the right pitch for my specific motor?,” please visit our Commonly Asked Questions page.</p>
+                   <p><a href="https://www.youtube.com/embed/4cf7A8xLVMA" target="_blank">Watch Video on Diameter and Pitch</a></p> 
+                </div>
+<a id="materials"></a>
+<p class="labelborder">Aluminum vs. Stainless Steel</p>
+
+            <p>There are pros and cons to both aluminum and stainless steel boat props. In order to determine which material best suits your boating lifestyle and budget, have a look at our comparison chart below.</p>
+<div class="propAlumVsSs">
+                    <table class="helpGuideTable">
+                        <thead>
+                            <tr><th></th><th>Aluminum</th><th>Stainless Steel</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">Pros:</td>
+                                <td>Less expensive</td>
+                                <td>Far more durable</td>
+                            </tr>
+                            <tr>
+                                <td>More variety (widest range of prop styles)</td>
+                                <td>Better performance due to less flex in the blades</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">Cons:</td>
+                                <td>Less durable — be careful around rocks,<br>sand bars, or muddy bottoms</td>
+                                <td>More damage to your boat/motor if something hits your prop</td>
+                            </tr>
+                            <tr>
+                                <td>No option for vented propellers</td>
+                                <td>Due to improved casting techniques, some aluminum props<br>can out-perform older stainless steel designs</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                <p><br><a href="https://www.youtube.com/embed/jjlr3wHhe6s" target="_blank">Watch Video on Aluminum vs Stainless Steel</a></p> 
+
+    </div>
+<a id="blades"></a>
+ <p class="labelborder">3-Blade vs. 4-Blade Props</p>
+
+<p>Three or four-blade props, how do you know which to choose for your boat? It’s all about compromise and goals.</p>
+<p>Your best bet for choosing between a 3-blade or 4-blade prop is knowing what kind of performance you want from your boat—general, hole shot, top-end speed, fuel economy, high-end. Thanks to <a href="https://www.boattest.com/view-news/3276_which-is-better-4-blades-or-3-blades" target="_blank">this blade comparison article</a> on BoatTest.com (written by PowerTech’s own Marcus Clemens!), the reasons for 4-blade over 3-blade props are fairly clear. Four-blade props can help practical, all-around boat performance by enhancing:</p>
+<ul>
+                        <li>Low-speed planing</li>
+                        <li>Fuel efficiency</li>
+                        <li>Cruise efficiency</li>
+                        <li>Big seas performance</li>
+                        <li>Down-current performance</li>
+                        <li>Ventilation/cavitation resistance</li>
+                    </ul>
+                    <p>As described above, 4-blade props generally translate to a faster hole shot and reduced vibration, albeit with less steering torque. 
+                    When a maximum top speed is the goal for your stern drive or outboard boat, 3-blade props are usually the best option. 
+For a side-by-side comparison of 3-blade vs. 4-blade props, take a look at our chart below.</p>
+  <div class="prop-3-4-BladeDif">
+                    <table class="helpGuideTable">
+                        <thead>
+                            <tr><th></th><th>3 Blades</th><th>4 Blades</th></tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td rowspan="2">Best For:</td>
+                                <td>Steering torque</td>
+                                <td>Handling</td>
+                            </tr>
+                            <tr>
+                                <td>Maximum top speed</td>
+                                <td>Hole shot</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">Offers:</td>
+                                <td>Less drag for higher top-end speeds</td>
+                                <td>High-thrust for towing skiers & tubes</td>
+                            </tr>
+                            <tr>
+                                <td>Aluminum and stainless steel options</td>
+                                <td>Aluminum and stainless steel options</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+  
+                    <p>Regardless of the reasons to opt for a three or four-blade prop, doing on-water testing in repeatable conditions is the way to go. 
+                    On-water testing is the best way to achieve the most accurate blade selection for your boat and its particular application. 
+                    Plus, it’s another excuse to get out on the water!</p>
+                    <p>To note, <a href="http://www.sportfishingmag.com/propeller-choices-3-blade-or-4-blade-props" target="_blank">this useful article in Sport Fishing Magazine</a> recommends checking other factors that might be effecting your boat’s performance—hull fouling, lack of adequate power, or improper weight distribution—before moving on to propping.</p>
+                <p><br><a href="https://www.youtube.com/embed/XIJLVoq9jLA" target="_blank">Watch Video on 3-Blade vs 4-Blade</a></p> 
+
+<a id="hubs"></a>
+  <p class="labelborder">Pressed-in Hub vs. Interchangeable Hub</p>
+
+<p><strong>The hub</strong> is the center of the boat propeller where the blades attach. The center of the hub will slide over the propeller shaft. In many cases this is the point where exhaust exits the engine.</p>
+                    <p>The splines of the hub must exactly match those of the shaft. <a href="https://www.savvyboater.com/product_images/uploaded_images/prop-hub-splines.jpg" target="_blank">Click to see image</a></p>
+
+                    <table class="helpGuideTable">
+                        <thead>
+                            <tr><th>Interchangeable Hub</th><th>Pressed-In Hub</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Hub stays attached to the boat, while the<br>propeller easily slides on and off</td>
+                                <td>Hub is integrated to the propeller core</td>
+                            </tr>
+                            <tr>
+                                <td>Easier and less expensive to frequently swap out</td>
+                                <td>Installed by being pressed in position by a<br>high pressure press (usually done in a shop)</td>
+                            </tr>
+                            <tr>
+                                <td>Not every interchangeable hub propeller<br>is sold as a set with the hub</td>
+                                <td>Most common choice for propeller hub design</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                <p><br><a href="https://www.youtube.com/embed/ZClBitCb9Lw" target="_blank">Watch Video on Pressed-in Hub vs Interchangeable Hub</a></p> 
+ 
+<a id="structures"></a>
+<p class="labelborder">Propeller Cup, Rotation, and Rake</p>
+            
+                    <h3>Cup</h3>
+                    <p>The propeller’s cup is the curved lip on the blade tip. Cupping a propeller will cause a decrease in RPMs, giving it high performance and minimizing cavitation under heavy loads.</p>
+                    <h3>Rotation</h3>
+                    <div>
+                        <p>Propellers spin right (clockwise) or left (counterclockwise).</p>
+                        <ul>
+                            <li><strong>Dual propellers</strong> have two blades that spin in opposite directions</li>
+                            <li><strong>Right-hand rotation</strong> is standard</li>
+                            <li><strong>Left-hand rotation</strong> is mainly used for one engine in a dual motor application to balance performance across the two engines</li>
+                            <li><a href="https://cdn3.bigcommerce.com/s-uprkx/product_images/uploaded_images/prop-cup-rake-2.jpg" target="_blank">Click to see image</a></li>
+                        </ul>
+                   
+                    <h3>Rake</h3>
+                        <p>Rake is the angle of the tip of the blade’s tilt forward or backward in relation to the hub. The angle is measured on a line extending from the center of the hub through the center of one blade.</p>
+                        <ul>
+                            <li><strong>Aft (Negative)</strong> rake tilts away from the hub—this helps the bow of the boat get up and out of the water, which creates less drag and results in higher top-end speeds</li>
+                            <li><strong>Forward (Positive)</strong> rake allows for a larger propeller which will give quicker hole shot for towing skiers</li>
+                            <li><a href="https://cdn3.bigcommerce.com/s-uprkx/product_images/uploaded_images/prop-rake.jpg" target="_blank">Click to see image</a></li>
+                        </ul>
+            
+
+<a id="maintenance"></a>
+<p class="labelborder">Maintaining Your Prop</p>
+
+<div class="propCare" style="margin-bottom: 20px;">
+                <h3>Prop Care & Maintenance</h3>
+                    <table>
+                        <thead>
+                            <tr><th>B.</th><th>R.</th><th>I.</th><th>G.</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Backup</strong> your boat propeller, just like you have a spare tire in your car. All-around performance propellers are typically a great option for backups.</td>
+                                <td><strong>Replace</strong> old, worn-out propellers. Running on a bent, chipped, or pock-marked prop will lead to cavitation as well as expensive damage to the engine and stern drive.</td>
+                                <td><strong>Inspect</strong> your propeller regularly for bent blades, nicks, and rolled tips, as well as any mud, aquatic plants, or animals.</td>
+                                <td><strong>Grease</strong> the moving parts of the propeller with a marine-quality waterproof product. Use the grease before fitting the boat prop and as part of your routine maintenance procedure.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                    <h3>What is Cavitation?</h3>
+                    
+                        <p>Cavitation is any erosion, pock marks, or irregular edges on the surface of the propeller. 
+                        When a pocket of air forms on the backside of a propeller blade, the impact of air bubbles on the actual blade causes cavitation. 
+                        This usually happens when a propeller’s RPMs are too high for its design. </p>
+                    
+                    <h3>How to Avoid Cavitation</h3>
+                   
+                        <p>The best way to avoid cavitation is to choose the correct propeller pitch for your engine. 
+                        You can also reduce the chances of prop cavitation by opting for stainless steel, or by going with blades that offer a cupped design.</p>
+                        <p>Damage from soft material can also lead to cavitation—not to mention reduced fuel economy and a drop in overall efficiency. 
+                        A stainless steel prop will hold up to silt and sand exposure, and thus cavitation, very well. </p>
+                    
+                    
+                    <h3>Troubleshooting Boat Vibration</h3>
+                  
+                        <p>Vibration usually comes from one of four things: the propeller, the engine, the shaft, or the shaft supports. 
+                        Though these other factors shouldn't be ignored, the number one culprit tends to be the propeller. 
+                        Prop vibration can come from several root causes, including imbalance, a worn hub, insufficient tip clearance, or inadequate blade area.</p>
+                        <p>Cavitation is another common cause of boat prop vibration. 
+                        When a prop has insufficient blade area, the blades get overloaded. 
+                        This causes cavitation, blade erosion and, ultimately, vibration.</p>
+                        <p>For a great article that covers several key boat prop troubleshooting points, take a look at this one, <a href="http://www.boatus.com/magazine/archives/how-to-fix-boat-propeller-problems.asp" target="_blank">Fixing Boat Propeller Problems</a>, from BoatUS.com.</p>
+               
+  
+  </div></section></div>
+
+
+{{/partial}}
+
+{{> layout/base}}

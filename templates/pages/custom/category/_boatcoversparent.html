@@ -1,0 +1,229 @@
+---
+category:
+    shop_by_price: true
+    products:
+        limit: {{theme_settings.categorypage_products_per_page}}
+---
+{{inject "categoryProductsPerPage" theme_settings.categorypage_products_per_page}}
+{{#partial "head"}}
+    {{#if pagination.category.previous}}
+        <link rel="prev" href="{{pagination.category.previous}}">
+    {{/if}}
+    {{#if pagination.category.next}}
+        <link rel="next" href="{{pagination.category.next}}">
+    {{/if}}
+{{/partial}}
+
+{{#partial "page"}}
+
+{{#if category.image}}
+    <img class="lazyload" data-sizes="auto" src="{{cdn 'img/loading.svg'}}" data-src="{{getImage category.image 'zoom_size'}}">
+{{/if}}
+{{{snippet 'categories'}}}
+<div class="page">
+    <main class="page-content" id="product-listing-container">
+        <div class="BoatCovers"><br>
+            <div class="CategoryDesc">
+                <img src="/product_images/uploaded_images/boat-covers-main-category-image.jpg">
+                <div class="categoryText">
+                    {{#unless theme_settings.hide_category_page_heading }}
+                        <h1 class="page-heading">{{category.name}}</h1>
+                    {{/unless}}
+                    <p><br>A boat cover is an essential part of maintaining your boat in top shape.  The cover will help to protect the boat from rain, snow and UV rays when not in use, and from dust and road grit while being towed.  Boat covers come in several types and brands, ranging from a basic utility cover for a simple but low-cost cover choice, to a top of the line custom snap cover generally made for your exact boat at a much higher price.
+                    </p>
+                </div>
+                <div class="clear"><br></div>
+            </div>
+            <div class="find-your-boat">
+                <div class="find-boat-inner">
+                    <div class="dottedHeader">
+                        <span>find your boat cover</span>
+                    </div>
+                    <div class="finders-props">
+                        <div class="findersMainCont NewCoverFinders">
+                            <div class="FinderContainer CarverCoverFinder">
+                                <div class="finderImg">
+                                    <h2>Carver<br>Boat Covers</h2>
+                                    <img class="BoatImage" src="/product_images/uploaded_images/carver-boat-cover-finder-image.png" alt="Carver Boat Covers Finder Image" data-pin-nopin="true">
+                                </div>
+                                <div class="finderText">
+                                    <ul>
+                                        <li>Free tie downs and storage bag</li>
+                                        <li>Wide range of fabrics</li>
+                                        <li>Made in USA</li>
+                                    </ul>
+                                    <!-- SearchSpring Finder Code Here -->
+                                    <iframe src="https://www.savvyboater.com/content/finders/covers-hierarchy_carver-2.html" frameborder="0" height="140" width="290"></iframe>
+                                    <!-- End SearchSpring Finder Code -->
+                                </div>                                        
+                            </div>
+                            <div class="FinderContainer WestlandCoverFinder">
+                                <div class="finderImg">
+                                    <h2>Westland<br>Boat Covers</h2>
+                                    <img class="BoatImage" src="https://www.savvyboater.com/content/images/brand-pages/westland-boat-cover.png" alt="Westland Boat Covers Finder Image" data-pin-nopin="true">
+                                </div>
+                                <div class="finderText">
+                                    <ul>
+                                        <li>Free tie downs and custom covers</li>
+                                        <li>Variety of fabrics and colors</li>
+                                        <li>Made in North America</li>
+                                    </ul>
+                                    <!-- SearchSpring Finder Code Here -->
+                                    <iframe src="https://www.savvyboater.com/content/finders/covers-hierarchy_westland-2.html" frameborder="0" height="140" width="290"></iframe>
+                                    <!-- End SearchSpring Finder Code -->
+                                </div>
+                            </div>
+                        </div>
+                    </div><p>To find a Semi-custom cover for your boat, simply scroll down the page to find your boat style. Select the style that best matches your boat to find a range of covers for that style. Narrow that list by selecting your boat length, beam, fabric preference, and other factors to find a semi-custom cover that will work well for your particularly boat.&nbsp;Benefits of a semi-custom boat cover include:</p>
+<ul>
+<li>Provides the same protection as a custom cover, at a lower cost.</li>
+<li>Fit based on boat type, length, and width</li>
+<li>Can accommodate trolling motors, swim platforms, etc.</li>
+<li>Great for trailering, mooring, &amp; storage</li>
+</ul>
+                </div>
+            </div>
+            <a id="bytype"></a>
+            <div class="shopbyBoatType">
+                <div class="dottedHeader aligntextRight">
+                    <span>Shop By Boat Type</span>
+                </div>                
+                {{> components/common/boat-types}}
+            </div>            
+            <a id="more"></a>            
+            <div class="cover-fit-columns">
+                <p>Savvyboater offers a wide range of covers from two of the top boat cover brands, <a href="https://www.savvyboater.com/carver-boat-covers/">Carver</a> and <a href="https://www.savvyboater.com/westland-boat-covers/">Westland</a>.  Carver covers are manufactured in the USA and Westland covers are manufactured in North America, so lead times are generally short and finish quality is high.  Both brands offer top quality boat covers in an array of high-quality fabrics and fit options. The fit you choose for your boat cover will depend on your needs. </p>    
+                <p>Our <a href="https://www.savvyboater.com/search.php?q=custom+boat+covers&amp;x=0&amp;y=0">custom boat covers</a> are designed specifically for the make, model and year of your boat. This choice is excellent for travel, storage and mooring and has padded reinforcements at key stress points for added durability. If you are looking for a slightly more economical option, our semi-custom boat covers are a great alternative as they can also be used in trailering, storage and mooring. These covers are not customized to your specific boat but are designed and fitted to your boat style, length and width.</p>
+                <p>Additionally, Carver offers an assortment of <a href="https://www.savvyboater.com/search.php?q=carver+universal+boat+covers&amp;x=0&amp;y=0">universal fit boat covers</a> that are excellent for storing your boat but are not recommended for trailering or mooring.</p>
+                <p>Both brands offer boat covers for the most popular boat styles like <a href="https://www.savvyboater.com/pontoon-boat-covers/">pontoon boats</a>, <a href="https://www.savvyboater.com/search.php?q=tournament&amp;x=0&amp;y=0">tournament ski boats</a>, and <a href="https://www.savvyboater.com/search.php?q=wide+bass&amp;x=0&amp;y=0">wide bass boats</a> and for less common styles like <a href="https://www.savvyboater.com/search.php?q=cruiser&amp;x=0&amp;y=0">day cruisers</a>, <a href="https://www.savvyboater.com/search.php?q=tri-hulls&amp;x=0&amp;y=0">tri-hulls</a>, and jet boats. All Carver covers do come with free tie-downs and storage bag with support poles offered as popular options. Westland offers free tie-downs with the purchase of one of their custom boat covers.    </p>
+                <p>To find the right boat cover for your boat simply input your boat’s make model and year into our boat cover finders or select the <a href="https://www.savvyboater.com/semi-custom-specialty-covers/">type of boat</a> you have for covers designed for that boat style. Be sure to follow our measuring guidelines for a great fit and select a fabric that’s ideal for your climate. See our Help Guide below for additional information on choosing your boat cover. </p>    
+            </div>   
+        </div>
+    </main>       
+</div>  
+{{/partial}}
+{{#partial "bannerbottom"}}
+    <div class="boatCoversBanner">
+    <div class="container">
+        <div class="main-div">
+            <div class="dottedHeader">
+                    <span>boat cover help guide</span>
+                </div>  
+        <p>Not sure where to start? Our help guide explains some of the most important factors to consider when shopping our boat covers for sale. If you still have questions, please contact us for help.   
+            <ul><li><a href="#fits">Custom, Semi-Custom & Universal Fit</a></li>
+    <li><a href="#measure">Measuring Your Boat for a Cover</a></li>
+    <li><a href="#instructions">How to Install a Boat Cover</a></li></li>
+        <li><a href="#ratings">Fabric Cover Ratings</a></li>
+    <li><a href="#climate">Fabric Cover Ratings by Climate</a></li>
+            <li><a href="#support">Boat Cover Support System</a></li>
+            <li><a href="#straps">Installing Boat Cover Tie Down Straps</a></li>
+            <li><a href="#clean">How to Clean Your Boat Cover</a></li>
+    </ul>
+            </p>
+       <a id="fits"></a>
+                <p class="labelborder">Custom, Semi-Custom & Universal Fit</p>
+      
+                <h3>Custom Fit:</h3>
+                    <ul>
+                        <li>Provides an exact fit for your specific boat’s make, model and year
+        </li><li>Excellent option for trailering
+        </li><li>Heavy duty draw rope encased in hem for snug fit and easy installation
+        </li><li>Vinyl reinforcements sewn in at stress points 
+        </li><li>Sewn in pad for use with optional boat cover support pole
+        </li><li>Motor covers provided for outboard models. Customized separate boat motor covers are available on some models 
+        </li>
+                    </ul>
+                <h3>Semi-Custom Fit:</h3>
+               
+                    <ul>
+                        <li>Can fit multiple boats of the same hull style
+        </li><li>Great option for trailering when properly installed
+        </li><li>Motor covers are sewn into outboard model motor covers. Some designs come with a separate motor cover
+        </li><li>Strong and durable shock cord encased in hem for a snug fit
+        </li>
+                        <strong>**Please note that trailerable boat covers must be installed correctly and properly tied down to prevent damage to your boat or your boat cover.</strong>
+                    </ul>
+                <h3>Universal Fit:</h3>
+                
+                    <ul>
+                        <li> Fits variety of boats within a given size range
+        </li><li>Economical option for boat storage
+        </li><li>Not recommended for boat trailering or mooring
+        </li><li>Tie down loops sewn into hem
+        </li><li>Heavy duty shock cord encased in hem
+        </li>
+                    </ul>
+        <a id="measure"></a>
+                    <p class="labelborder">Measuring Your Boat for a Cover</p>   
+                        <h3>Step-By-Step</h3>
+                
+                <ol>
+                    <li>You will need to know the <strong>centerline length</strong> (from tip to tail) and <strong>beam width</strong> (side to side at the widest point) of your boat.</li>
+                    <li>Measure the entire distance in a <strong>straight line</strong> without measuring up or around obstacles or by following the curve of the boat. Don't rely on an owner's manual for accurate measurements.</li>
+                    <li>Factor in the dimensions of any <strong>additional features</strong> that will affect the cover such as a trolling motor, center console, jack plate or aftermarket pulpit, anchor davit, or swim step*.</li>
+                    <li><a href="https://cdn3.bigcommerce.com/s-uprkx/product_images/uploaded_images/measure-boat-for-cover-image.jpg" target="_blank">See instructions with image</a></li>
+                </ol>
+                <p>*If you have a <strong>swim step</strong>, measure just for the length of the step. You will add this length to the centerline length or keep it as a separate measurement for covers that fit the swim step.</p>
+                <h3>Video Guide: <a href="https://www.youtube.com/watch?v=vPQwtaNhM38&feature=youtu.be&list=PL81C9CBDD4FAB4DED" target="_blank">How to Measure Your Boat for a Cover</a></h3>
+            
+            <a id="instructions"></a>
+           
+                <p class="labelborder">How to Install a Boat Cover</p>            
+               
+                <p><a href="/content/PDFs/BoatCoverInstallation2019-for-Web-ALL.pdf" target="_blank">Step-By-Step Installation Instructions</a></p>  
+           
+        <a id="ratings"></a>
+                <p class="labelborder"><a href="/boat-covers-buyer-guide/" target="_blank">Fabric Cover Ratings</a> </p> 
+            
+        <a id="climate"></a>
+                <p class="labelborder"><a href="/boat-covers-buyer-guide/" target="_blank">Fabric Cover Ratings by Climate</a>   </p>
+          
+        <a id="support"></a>
+           
+                <p class="labelborder">Boat Cover Support Systems</p>
+            <p>
+                Keep your boat cover from sagging and collecting snow and water build up that can cause tearing, mold and mildew. Even fabrics recommended for humid environments will need extra ventilation. <a href="/boat-covers-buyer-guide/" target="_blank">See table comparison.</a> </p>
+           
+        <a id="straps"></a>
+           
+                <p class="labelborder">Installing Boat Cover Tie Down Straps</p>
+                <ol>
+                    <ol>
+                        <li>Thread the buckle end of the strap through the loop on the cover from back to front.</li>
+                        <li>Pull buckle end out about a foot and tie with an overhand knot.</li>
+                        <li>Wrap the long end (without the buckle) down around the beam on the trailer from back to front.</li>
+                        <li>Continue to take the end up and thread it through the buckle from back to front.</li>
+                        <li>The strap is now fully adjustable by pulling on the loose end of the buckle to tighten.</li>
+                        <li><a href="https://cdn3.bigcommerce.com/s-uprkx/product_images/uploaded_images/cover-tie-down-installation.jpg" target="_blank">See instructions with image</a></li>
+                    </ol>
+                </ol>
+           
+        <a id="clean"></a>
+         
+                <p class="labelborder">How to Clean Your Boat Cover</p>
+                <h3>For Mildew</h3>
+            <div class="ind40">
+                <p>1 cup Vinegar
+                    <br> 1 cup Borax
+                    <br> 2 cups warm water</p>
+                <p>Mix and apply to mildew spots, letting it sit for no more than 10 minutes.
+                    <br> Scrub with a soft bristle brush and rinse well, allowing the fabric to dry completely.</p>
+            </div>
+            <h3>For General Cleaning</h3>
+            <div class="ind40">
+                <p>¼ cup Dawn dish soap
+                    <br> 1 gallon water</p>
+                <p>Fully wet the fabric and then scrub it down with a soft brush or cloth.
+                    <br>Give your boat cover a good rinse, and allow the fabric to fully dry.</p>
+                <p>Get tough spots clean with <a href="/search.php?q=fabric+cleaner&x=0&y=0#/?_=1&filter.product_type=Bimini Tops&page=1" target="_blank">Fabric and Vinyl Cleaner</a>.</p>
+                <p>Apply <a href="/search.php?q=fabric+guard&x=0&y=0#/?_=1&filter.product_type=Bimini Tops&page=1" target="_blank">Fabric Guard</a> to the clean, dry surface to protect your boat cover from the elements and extend its life.</p>
+            </div>
+            <h3>NEVER</h3>
+            <p class="ind40">Put in washer and dryer
+                <br> Use powerful cleaners like bleach or detergent</p>
+          
+        </div>
+    </div>
+{{/partial}}
+
+{{> layout/base}}
