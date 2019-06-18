@@ -721,7 +721,7 @@ Upsell.prototype.updatePriceLabel = function() {
   // set the original price from the currentPrice property. set to 0 if
   // does not exist.
   var originalPrice = parseFloat(this.currPrice) || 0;
-
+  
   // add the three tallies.
   upsellTotal = parseFloat(this.upsellTallyChecks() +
     this.upsellTallyDropdowns(originalPrice)) +
@@ -758,6 +758,7 @@ Upsell.prototype.upsellTallyChecks = function() {
 
       // get the checkbox label. assumes that there is one.
       var chktempValue = $(this).next().find('span:first').text();
+
       // get the price from the label if there is one.
       var fltPrice = extractPriceFromString(chktempValue);
 
@@ -799,7 +800,7 @@ Upsell.prototype.upsellTallyDropdowns = function(originalPrice) {
   var upsellTotal = parseFloat("0.00");
 
   // cycle through all checkboxes.
-  $("select").each(function() {
+  $("select.customDropDown").each(function() {
 
     // get all of the selected options.
     // console.log($(this).children(':selected').text());
@@ -1001,7 +1002,7 @@ function extractPriceFromString(strLabel) {
 
 /**
 * Takes string and extracts the percentage. Assumes the format:
-* <label text> (+ <percentage>%)
+* <label text> (+ <percentage>%) - <label text>
 * @param strLabel label text.
 * @returns price as a float.
 */
@@ -1016,8 +1017,19 @@ function extractPercentageFromString(strLabel) {
     // array of split value.
     var arrStrLabel = strLabel.split(' (+ ');
 
+    var arrStrLabel2;
+
+    // If third element contains
+    if (arrStrLabel[1].indexOf(' - ') > -1) {
+      var arrStrLabel3 = arrStrLabel[1].split(' - ');
+      arrStrLabel2 = arrStrLabel3[0];
+    } else {
+      arrStrLabel2 = arrStrLabel[1];
+    }
+
     // get just the price from the second element in the array.
-    var strPrice = arrStrLabel[1].replace(")", "").replace("$", "").replace("%","");
+    var strPrice = arrStrLabel2.replace(")", "").replace("$", "").replace("%","");
+    console.log(strPrice, '%');
 
     // convert to a decimal.
     strPrice = strPrice / 100;
