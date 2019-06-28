@@ -8,7 +8,7 @@
     </label>
 
     <select class="validation form-select form-select--small {{#if this.display_name "===" "Fabric Type"}} customDropDown {{/if}}" name="attribute[{{this.id}}]" id="attribute_select_{{id}}" {{#if required}}required{{/if}}>
-        <option value="">Select Fabric</option>
+        <option value="">{{#if this.display_name "===" "Fabric Type"}}Select Fabric{{else}}{{lang 'products.choose_options'}}{{/if}}</option>
         {{#each this.values}}
             <option data-product-attribute-value="{{id}}" data-product-attribute-label="{{label}}" value="{{id}}" {{#if selected}}selected data-default{{/if}}>{{label}}</option>
         {{/each}}
