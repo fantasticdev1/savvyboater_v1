@@ -1,36 +1,19 @@
-#fabricComparisonTable,
-#biminiFabricComparisonTable {
+#fabricComparisonTable, #biminiFabricComparisonTable{
     color: #000;
     margin: 0px;
     border-collapse: collapse;
-}
-
-.productPageBiminiFabricComparison #biminiFabricComparisonTable {
+}.productPageBiminiFabricComparison #biminiFabricComparisonTable{
     margin: 10px 0px 0px 25px;
-}
-
-#catPageHelpContainer #fabricComparisonTable,
-#catPageHelpContainer #biminiFabricComparisonTable {
+}#catPageHelpContainer #fabricComparisonTable, #catPageHelpContainer #biminiFabricComparisonTable{
     margin-left: 30px;
-}
-
-#fabricComparisonTable th,
-#biminiFabricComparisonTable th {
+}#fabricComparisonTable th, #biminiFabricComparisonTable th{
     background: none;
     padding: 0;
-}
-
-#fabricComparisonTable tr,
-#biminiFabricComparisonTable tr {
+}#fabricComparisonTable tr, #biminiFabricComparisonTable tr{
     height: 35px;
-}
-
-#fabricComparisonTable tr:first-child th,
-#biminiFabricComparisonTable tr:first-child th {
+}#fabricComparisonTable tr:first-child th, #biminiFabricComparisonTable tr:first-child th{
     height: 29px;
-}
-
-div.frontLayer {
+}div.frontLayer{
     background-color: #bfd9ef;
     border: 2px solid #000;
     height: 100%;
@@ -39,920 +22,498 @@ div.frontLayer {
     line-height: 3.3;
     position: relative;
     z-index: 1;
-}
-
-div.frontLayer.white {
+}div.frontLayer.white{
     border: none;
     height: 100%;
     width: 100%;
     margin-bottom: -13px;
-}
-
-#fabricComparisonTable tr:nth-child(2) th:nth-child(2),
-#biminiFabricComparisonTable tr:nth-child(2) th:nth-child(2) {
+}#fabricComparisonTable tr:nth-child(2) th:nth-child(2), #biminiFabricComparisonTable tr:nth-child(2) th:nth-child(2){
     vertical-align: bottom;
     font-size: 14px;
-}
-
-#fabricComparisonTable tr:not(:nth-child(2)),
-#biminiFabricComparisonTable tr:not(:nth-child(2)) {
+}#fabricComparisonTable tr:not(:nth-child(2)), #biminiFabricComparisonTable tr:not(:nth-child(2)){
     background-color: #BBD5EC;
-}
-
-#fabricComparisonTable th:first-child,
-#fabricComparisonTable th:nth-child(2),
-#biminiFabricComparisonTable th:first-child,
-#biminiFabricComparisonTable th:nth-child(2) {
+}#fabricComparisonTable th:first-child, #fabricComparisonTable th:nth-child(2), #biminiFabricComparisonTable th:first-child, #biminiFabricComparisonTable th:nth-child(2){
     border: none;
-}
-
-#fabricComparisonTable tr:nth-child(2) th:last-child,
-#biminiFabricComparisonTable tr:nth-child(2) th:last-child {
+}#fabricComparisonTable tr:nth-child(2) th:last-child, #biminiFabricComparisonTable tr:nth-child(2) th:last-child{
     width: 132px;
-}
-
-#fabricComparisonTable tr:nth-child(3),
-#biminiFabricComparisonTable tr:nth-child(3) {
+}#fabricComparisonTable tr:nth-child(3), #biminiFabricComparisonTable tr:nth-child(3){
     background-color: #DBE9F4;
-}
-
-#fabricComparisonTable tr:nth-child(11),
-#fabricComparisonTable tr:last-child,
-#biminiFabricComparisonTable tr:nth-child(9),
-#biminiFabricComparisonTable tr:last-child {
+}#fabricComparisonTable tr:nth-child(11), #fabricComparisonTable tr:last-child, #biminiFabricComparisonTable tr:nth-child(9), #biminiFabricComparisonTable tr:last-child{
     background-color: #9CBEE0;
-}
-
-#fabricComparisonTable td,
-#biminiFabricComparisonTable td {
+}#fabricComparisonTable td, #biminiFabricComparisonTable td{
     text-align: center;
     border: 2px solid #000;
     font-size: 14px;
     padding: 0;
-}
-
-#fabricComparisonTable td span,
-#biminiFabricComparisonTable td span {
+}#fabricComparisonTable td span, #biminiFabricComparisonTable td span{
     font-size: 12px;
-}
-
-#fabricComparisonTable tr:not(:nth-child(3)):not(:nth-child(11)) td:not(.rotate90),
-#biminiFabricComparisonTable tr:not(:nth-child(3)):not(:nth-child(9)) td:not(.rotate90) {
+}#fabricComparisonTable tr:not(:nth-child(3)):not(:nth-child(11)) td:not(.rotate90), #biminiFabricComparisonTable tr:not(:nth-child(3)):not(:nth-child(9)) td:not(.rotate90){
     border-top: 1px dashed gray;
-}
-
-#fabricComparisonTable tr:not(:nth-child(3)):not(:last-child) td:not(.rotate90),
-#biminiFabricComparisonTable tr:not(:nth-child(3)):not(:last-child) td:not(.rotate90) {
+}#fabricComparisonTable tr:not(:nth-child(3)):not(:last-child) td:not(.rotate90), #biminiFabricComparisonTable tr:not(:nth-child(3)):not(:last-child) td:not(.rotate90){
     border-bottom: none;
-}
-
-#fabricComparisonTable td:first-child:not(.rotate90),
-#fabricComparisonTable tr:nth-child(3) td:nth-child(2),
-#fabricComparisonTable tr:nth-child(4) td:nth-child(2),
-#fabricComparisonTable tr:nth-child(11) td:nth-child(2),
-#biminiFabricComparisonTable td:first-child:not(.rotate90),
-#biminiFabricComparisonTable tr:nth-child(3) td:nth-child(2),
-#biminiFabricComparisonTable tr:nth-child(4) td:nth-child(2),
-#biminiFabricComparisonTable tr:nth-child(9) td:nth-child(2) {
+}#fabricComparisonTable td:first-child:not(.rotate90), #fabricComparisonTable tr:nth-child(3) td:nth-child(2), #fabricComparisonTable tr:nth-child(4) td:nth-child(2), #fabricComparisonTable tr:nth-child(11) td:nth-child(2), #biminiFabricComparisonTable td:first-child:not(.rotate90), #biminiFabricComparisonTable tr:nth-child(3) td:nth-child(2), #biminiFabricComparisonTable tr:nth-child(4) td:nth-child(2), #biminiFabricComparisonTable tr:nth-child(9) td:nth-child(2){
     text-align: left;
     font-size: 14px;
     width: 250px;
     padding-left: 5px;
-}
-
-#fabricComparisonTable tr:not(:nth-child(3)):not(:nth-child(4)):not(:nth-child(11)) td:nth-child(8),
-#fabricComparisonTable td:nth-child(9),
-#biminiFabricComparisonTable tr:not(:nth-child(3)):not(:nth-child(4)):not(:nth-child(9)) td:nth-child(8),
-#biminiFabricComparisonTable td:nth-child(9),
-div.frontLayer.green {
-
+}#fabricComparisonTable tr:not(:nth-child(3)):not(:nth-child(4)):not(:nth-child(11)) td:nth-child(8), #fabricComparisonTable td:nth-child(9), #biminiFabricComparisonTable tr:not(:nth-child(3)):not(:nth-child(4)):not(:nth-child(9)) td:nth-child(8), #biminiFabricComparisonTable td:nth-child(9), div.frontLayer.green{
     background-color: #8CCF52;
-}
-
-#fabricComparisonTable td:last-child,
-#biminiFabricComparisonTable td:last-child,
-div.frontLayer.yellow {
+}#fabricComparisonTable td:last-child, #biminiFabricComparisonTable td:last-child, div.frontLayer.yellow{
     background-color: #F9C100;
-}
-
-#fabricComparisonTable td.rotate90,
-#biminiFabricComparisonTable td.rotate90 {
+}#fabricComparisonTable td.rotate90, #biminiFabricComparisonTable td.rotate90{
     font-size: 10px;
     font-weight: 600;
     text-align: center;
     vertical-align: middle;
     transform: rotate(270deg);
-}
-
-#fabricComparisonTable th.rotate45,
-#biminiFabricComparisonTable th.rotate45 {
+}#fabricComparisonTable th.rotate45, #biminiFabricComparisonTable th.rotate45{
     height: 130px;
     white-space: nowrap;
     position: relative;
     z-index: 0;
-}
-
-#fabricComparisonTable th.rotate45>div,
-#biminiFabricComparisonTable th.rotate45>div {
+}#fabricComparisonTable th.rotate45>div, #biminiFabricComparisonTable th.rotate45>div{
     transform: translate(3px, 61px) rotate(315deg);
     width: 50px;
-}
-
-#fabricComparisonTable th.rotate45>div>span,
-#biminiFabricComparisonTable th.rotate45>div>span {
+}#fabricComparisonTable th.rotate45>div>span, #biminiFabricComparisonTable th.rotate45>div>span{
     border-bottom: 2px solid #000;
     padding: 5px 31px 6px;
     background-color: #2E73B3;
     font-size: 14px;
     color: #FFF;
-}
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    div.frontLayer:not(.white) {
+}@media screen and (-webkit-min-device-pixel-ratio:0){
+    div.frontLayer:not(.white){
         height: 50px;
-    }
-    #fabricComparisonTable th.rotate45>div,
-    #biminiFabricComparisonTable th.rotate45>div {
+    }#fabricComparisonTable th.rotate45>div, #biminiFabricComparisonTable th.rotate45>div{
         transform: translate(4px, 61px) rotate(315deg);
-    }
-    #fabricComparisonTable th.rotate45>div>span,
-    #biminiFabricComparisonTable th.rotate45>div>span {
+    }#fabricComparisonTable th.rotate45>div>span, #biminiFabricComparisonTable th.rotate45>div>span{
         padding: 6px 31px 6px;
     }
-}
-
-#fabricComparisonTable tr:nth-child(2) th:nth-child(3)>div>span,
-#biminiFabricComparisonTable tr:nth-child(2) th:nth-child(3)>div>span {
+}#fabricComparisonTable tr:nth-child(2) th:nth-child(3)>div>span, #biminiFabricComparisonTable tr:nth-child(2) th:nth-child(3)>div>span{
     padding-right: 88px;
-}
-
-#fabricComparisonTable tr:nth-child(2) th:nth-child(4)>div>span,
-#biminiFabricComparisonTable tr:nth-child(2) th:nth-child(4)>div>span {
+}#fabricComparisonTable tr:nth-child(2) th:nth-child(4)>div>span, #biminiFabricComparisonTable tr:nth-child(2) th:nth-child(4)>div>span{
     padding-right: 52px;
-}
-
-#fabricComparisonTable tr:nth-child(2) th:nth-child(5)>div>span,
-#biminiFabricComparisonTable tr:nth-child(2) th:nth-child(5)>div>span {
+}#fabricComparisonTable tr:nth-child(2) th:nth-child(5)>div>span, #biminiFabricComparisonTable tr:nth-child(2) th:nth-child(5)>div>span{
     padding-right: 43px;
-}
-
-#fabricComparisonTable tr:nth-child(2) th:nth-child(6)>div>span,
-#biminiFabricComparisonTable tr:nth-child(2) th:nth-child(6)>div>span {
+}#fabricComparisonTable tr:nth-child(2) th:nth-child(6)>div>span, #biminiFabricComparisonTable tr:nth-child(2) th:nth-child(6)>div>span{
     padding-right: 32px;
-}
-
-#fabricComparisonTable tr:nth-child(2) th:nth-child(7)>div>span,
-#biminiFabricComparisonTable tr:nth-child(2) th:nth-child(7)>div>span {
+}#fabricComparisonTable tr:nth-child(2) th:nth-child(7)>div>span, #biminiFabricComparisonTable tr:nth-child(2) th:nth-child(7)>div>span{
     padding-right: 78px;
-}
-
-#fabricComparisonTable tr:nth-child(2) th:nth-child(8)>div>span,
-#biminiFabricComparisonTable tr:nth-child(2) th:nth-child(8)>div>span {
+}#fabricComparisonTable tr:nth-child(2) th:nth-child(8)>div>span, #biminiFabricComparisonTable tr:nth-child(2) th:nth-child(8)>div>span{
     padding-right: 111px;
-}
-
-#fabricComparisonTable tr:nth-child(2) th:nth-child(9)>div>span,
-#biminiFabricComparisonTable tr:nth-child(2) th:nth-child(9)>div>span {
+}#fabricComparisonTable tr:nth-child(2) th:nth-child(9)>div>span, #biminiFabricComparisonTable tr:nth-child(2) th:nth-child(9)>div>span{
     padding-right: 59px;
     background-color: #8CCF52;
     color: #000;
-}
-
-#fabricComparisonTable tr:nth-child(2) th:nth-child(10)>div>span,
-#biminiFabricComparisonTable tr:nth-child(2) th:nth-child(10)>div>span {
+}#fabricComparisonTable tr:nth-child(2) th:nth-child(10)>div>span, #biminiFabricComparisonTable tr:nth-child(2) th:nth-child(10)>div>span{
     padding-right: 76px;
     background-color: #F9C100;
     color: #000;
-}
-
-#fabricComparisonTable+p,
-#biminiFabricComparisonTable+p {
+}#fabricComparisonTable+p, #biminiFabricComparisonTable+p{
     display: block;
     margin: 10px auto;
-}
-
-.fabricTableKey {
+}.fabricTableKey{
     text-align: center;
-}
-
-span.blue5 {
+}span.blue5{
     color: #084586;
     font-weight: 700;
-}
-
-span.green4 {
+}span.green4{
     color: #119F59;
     font-weight: 700;
-}
-
-span.gold3 {
+}span.gold3{
     color: #CC9900;
     font-weight: 700;
-}
-
-span.orange2 {
+}span.orange2{
     color: #FF5800;
     font-weight: 700;
-}
-
-span.red1 {
+}span.red1{
     color: #C30506;
     font-weight: 700;
-}
-
-div.boatCoverStyles img {
+}div.boatCoverStyles img{
     float: right;
     margin: -30px 0px 0px 15px;
-}
-
-div.boatCoverStyles h5:not(:first-child) {
+}div.boatCoverStyles h5:not(:first-child){
     margin-top: 60px !important;
-}
-
-div.boatCoverStyles ul:last-child {
+}div.boatCoverStyles ul:last-child{
     margin-bottom: 100px;
-}
-
-.measuringForCover ol,
-.measuringForCover {
+}.measuringForCover ol, .measuringForCover{
     margin-bottom: 20px;
-}
-
-img#measureBoatForCoverImg {
+}img#measureBoatForCoverImg{
     float: none;
     margin: 0 auto;
-}
-
-.coverSupportSystems p {
+}.coverSupportSystems p{
     margin-top: 15px;
     margin-bottom: 25px !important;
-}
-
-#coverSupportSystemsTable {
-margin-top: 20px;
-}
-
-#coverSupportSystemsTable td {
+}#coverSupportSystemsTable{
+    margin-top: 20px;
+}#coverSupportSystemsTable td{
     width: 214px;
-}
-
-.coverSupportSystemImages {
+}.coverSupportSystemImages{
     text-align: center;
     margin-bottom: 20px;
-}
-
-.coverSupportSystemImages img:first-child {
-width: 18%;
-margin-left: 0;
-}
-
-.coverSupportSystemImages img:nth-child(2) {
+}.coverSupportSystemImages img:first-child{
+    width: 18%;
+    margin-left: 0;
+}.coverSupportSystemImages img:nth-child(2){
     margin-left: 1%;
     margin-bottom: 0;
     width: 23%;
-}
-
-.coverSupportSystemImages img:nth-child(3) {
+}.coverSupportSystemImages img:nth-child(3){
     margin-left: 1%;
     margin-bottom: 0;
     width: 23%;
-}
-
-.coverSupportSystemImages img:last-child {
+}.coverSupportSystemImages img:last-child{
     margin-left: 1%;
     margin-bottom: 0;
     width: 23%;
-}
-
-.installCoverTieDown ol {
+}.installCoverTieDown ol{
     margin-top: 25px;
     margin-bottom: 27px;
-}
-
-img#coverTieDownInstall {
+}img#coverTieDownInstall{
     float: right;
     margin: 10px 100px 10px 20px;
-}
-
-.fenderComparisonTable td:nth-child(2) {
+}.fenderComparisonTable td:nth-child(2){
     font-weight: 600;
     border-left: hidden;
     text-align: left;
-}
-
-.fenderSizeTables tr:first-child {
+}.fenderSizeTables tr:first-child{
     font-weight: 700;
     color: #084586;
-}
-
-.fenderSizeTables tr:last-child {
+}.fenderSizeTables tr:last-child{
     font-weight: 600;
-}
-
-.fenderSizeTables a {
+}.fenderSizeTables a{
     font-weight: 700;
     color: #084586;
-}
-
-.fenderSizeTables a:hover {
+}.fenderSizeTables a:hover{
     text-decoration: underline;
     color: #9c1b20;
-}
-
-.fenderPlacement figcaption {
+}.fenderPlacement figcaption{
     font-size: 10px;
     color: #666;
     text-align: center;
-}
-
-.fenderPlacement img {
+}.fenderPlacement img{
     float: right;
     clear: right;
     margin: 0px 30px 10px 15px;
-}
-
-.fenderPlacement ul:last-child {
+}.fenderPlacement ul:last-child{
     margin-bottom: 0px;
-}
-
-.fenderInflation iframe {
+}.fenderInflation iframe{
     display: inline-block;
-}
-
-.fenderInflation iframe:first-child {
+}.fenderInflation iframe:first-child{
     margin-left: 42px;
     margin-right: 24px;
-}
-
-
-/* .fenderInflation iframe:last-child {
-    float: right;
-    margin-right: 35px;
-} */
-
-.fenderInflationVids h5 {
+}.fenderInflationVids h5{
     display: inline-block;
     margin-top: 0px !important;
-}
-
-.fenderInflationVids h5:first-child {
+}.fenderInflationVids h5:first-child{
     margin-left: 155px !important;
-}
-
-.fenderInflationVids h5:last-child {
+}.fenderInflationVids h5:last-child{
     float: right;
     margin-right: 160px;
-}
-
-.maxCircTables td:nth-child(1),
-.maxCircTables td:nth-child(2),
-.maxCircTables td:nth-child(4),
-.maxCircTables td:nth-child(5) {
+}.maxCircTables td:nth-child(1), .maxCircTables td:nth-child(2), .maxCircTables td:nth-child(4), .maxCircTables td:nth-child(5){
     width: 194px;
-}
-
-.deicerPara {
+}.deicerPara{
     margin-left: 320px;
-}
-
-#deicerBasicsImg1 {
+}#deicerBasicsImg1{
     height: 225px;
     float: left;
     margin-top: 8px;
     margin-right: 15px;
-}
-
-#deicerApplicationsImg1,
-#deicerApplicationsImg2,
-#deicerApplicationsImg3,
-#deicerApplicationsImg4,
-#deicerApplicationsImg5 {
+}#deicerApplicationsImg1, #deicerApplicationsImg2, #deicerApplicationsImg3, #deicerApplicationsImg4, #deicerApplicationsImg5{
     float: left;
     margin-left: 0px;
     margin-right: 20px;
     width: 260px;
-}
-
-#deicerDiagram1 {
+}#deicerDiagram1{
     margin-left: 120px;
-}
-
-#deicerMountImg1 {
+}#deicerMountImg1{
     margin-left: 85px;
-}
-
-.propFit p {
+}.propFit p{
     width: 95%;
-}
-
-.prop-3-4-BladeDif {
+}.prop-3-4-BladeDif{
     margin-top: 25px;
    margin-bottom: 20px;
-}
-
-.propAlumVsSs img {
+}.propAlumVsSs img{
     width: 150px;
     margin: -15px 145px 10px 180px;
-}
-
-.prop-3-4-BladeDif img {
+}.prop-3-4-BladeDif img{
     width: 150px;
     margin: -5px 0px 10px 200px;
-}
-
-
-.propAlumSSPara p {
+}.propAlumSSPara p{
     width: 95%;
-}
-
-.prop-3-4-BladePara p {
+}.prop-3-4-BladePara p{
     width: 95%;
-}
-
-div.propDiamPitch,
-div.hubTypeDif,
-div.testPropPerformance,
-div.propProblems,
-div.propLessFeatures {
+}div.propDiamPitch, div.hubTypeDif, div.testPropPerformance, div.propProblems, div.propLessFeatures{
     position: relative;
-}
-
-.propDiamPitch p {
+}.propDiamPitch p{
     width: 95%;
-}
-
-.propDiamPitch li {
+}.propDiamPitch li{
     max-width: 500px
-}
-
-.propDiamImg1 {
+}.propDiamImg1{
     display: block;
     float: right;
     margin-top: -30px;
     margin-left: 10px;
     margin-right: 50px;
-}
-
-.propDiamImg2 {
+}.propDiamImg2{
     display: block;
     float: right;
     width: 210px;
     margin-top: -270px;
     margin-right: 50px;
-}
-
-.propDiamPitch p.imgCaption {
+}.propDiamPitch p.imgCaption{
     text-align: center;
     font-size: 11px !important;
     position: absolute;
     bottom: 115px;
     left: 320px;
-}
-
-#highPitch {
+}#highPitch{
     text-align: left;
     bottom: 300px;
     left: 655px;
-}
-
-#lowPitch {
+}#lowPitch{
     text-align: left;
     bottom: 205px;
     left: 655px;
-}
-
-
-
-
-.testPropPerformance p {
+}.testPropPerformance p{
     width: 95%;
-}
-
-.testPropPerformance li {
+}.testPropPerformance li{
     max-width: 460px;
-}
-
-.testPropPerformance img {
+}.testPropPerformance img{
     position: absolute;
     width: 300px;
     top: 90px;
     right: 20px
-}
-
-
-.propProblems p {
+}.propProblems p{
     max-width: 500px;
-}
-
-.propProblems img {
+}.propProblems img{
     position: absolute;
     width: 250px
-}
-
-.propProblems div+img {
+}.propProblems div+img{
     top: 350px;
     right: 45px
-}
-
-.propProblems h5+img {
+}.propProblems h5+img{
     top: 60px;
     right: 45px;
-}
-
-.propCare table {
+}.propCare table{
     max-width: 100%;
     margin: 0px auto;
-}
-
-.propCare td {
+}.propCare td{
     vertical-align: top;
     padding: 0px 8px;
-}
-
-.propLessFeatures p,
-.propLessFeatures li {
+}.propLessFeatures p, .propLessFeatures li{
     max-width: 550px;
-}
-
-.propLessFeatures img {
+}.propLessFeatures img{
     max-width: 250px;
     position: absolute;
-}
-
-.propLessFeatures p+img {
+}.propLessFeatures p+img{
     width: 200px;
     top: 30px;
     right: 70px;
-}
-
-.propLessFeatures div+img {
+}.propLessFeatures div+img{
     top: 270px;
     right: 55px;
-}
-
-.propBuyNow p {
+}.propBuyNow p{
     width: 95%;
     font-size: 15px !important;
-}
-
-.lightBlueSpan td {
+}.lightBlueSpan td{
     height: 20px;
     background-color: #eaeff3;
     font-weight: 600;
-}
-
-.helpGuideTable caption {
+}.helpGuideTable caption{
     margin: 28px 0px 10px 0px;
     font-weight: 700;
-}
-
-#blankSpace {
+}#blankSpace{
     background-color: white !important;
     border: none !important;
-}
-
-.boatStyleTable th:first-child {
+}.boatStyleTable th:first-child{
     width: 300px;
-}
-
-.TableTitle {
+}.TableTitle{
     font-size: 150%;
-}
-
-.helpGuideTableColOne {
+}.helpGuideTableColOne{
     text-align: left;
     font-weight: 700;
     color: black;
-}
-
-.helpGuideTableRowOne {
+}.helpGuideTableRowOne{
     text-align: center;
     font-weight: 700;
-}
-
-.tdLjust {
+}.tdLjust{
     text-align: left;
-}
-
-.more {
+}.more{
     display: none;
-}
-
-a.showLink,
-a.hideLink {
+}a.showLink, a.hideLink{
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
     padding-left: 8px;
-}
-
-a.showLink {
+}a.showLink{
     color: #084586;
-}
-
-a.hideLink {
+}a.hideLink{
     color: #9c1b21;
-}
-
-div.ProductDescriptionContainer a.showLink,
-div.ProductDescriptionContainer a.hideLink {
+}div.ProductDescriptionContainer a.showLink, div.ProductDescriptionContainer a.hideLink{
     font-size: .95em;
     padding-left: 0px;
-}
-
-a.showLink:hover,
-a.hideLink:hover {
+}a.showLink:hover, a.hideLink:hover{
     color: #9C1B20;
-}
-
-h2.expandingTopic {
+}h2.expandingTopic{
     color: #084586;
     text-decoration: none;
-}
-
-h2.expandingTopic:hover {
+}h2.expandingTopic:hover{
     color: #9C1B21;
     cursor: pointer;
-}
-
-div.topicBody {
+}div.topicBody{
     display: none;
-}
-
-#commonQuestionsContainer {
+}#commonQuestionsContainer{
     width: 650px;
     margin: 0px auto;
-}
-
-#commonQuestionsContainer img {
+}#commonQuestionsContainer img{
     display: block;
     margin: 10px auto;
-}
-
-#fendersCommonQ {
+}#fendersCommonQ{
     height: 300px;
-}
-
-.fenderStyles1 {
+}.fenderStyles1{
     display: inline-block;
-}
-
-.fenderStyles1 ul {
+}.fenderStyles1 ul{
     margin-left: 50px;
-}
-
-#fenderStylesImg1 {
+}#fenderStylesImg1{
     width: 120px;
     float: left;
     padding-left: 40px;
-}
-
-.fenderStylesText1 {
+}.fenderStylesText1{
     float: right;
     margin-top: 45px;
     padding-left: 20px;
-}
-
-.fenderStyles2 {
+}.fenderStyles2{
     display: inline-block;
-}
-
-.fenderStyles2 ul {
+}.fenderStyles2 ul{
     margin-left: 50px;
-}
-
-#fenderStylesImg2 {
+}#fenderStylesImg2{
     width: 130px;
     float: left;
     padding-left: 35px;
-}
-
-.fenderStylesText2 {
+}.fenderStylesText2{
     float: right;
     margin-top: 45px;
     padding-left: 15px;
-}
-
-.fenderStyles3 {
+}.fenderStyles3{
     display: inline-block;
-}
-
-.fenderStyles3 ul {
+}.fenderStyles3 ul{
     margin-left: 50px;
-}
-
-#fenderStylesImg3 {
+}#fenderStylesImg3{
     width: 140px;
     float: left;
     padding-left: 30px;
-}
-
-.fenderStylesText3 {
+}.fenderStylesText3{
     float: right;
     margin-top: 45px;
     padding-left: 10px;
-}
-
-.fenderStyles4 {
+}.fenderStyles4{
     display: inline-block;
-}
-
-.fenderStyles4 ul {
+}.fenderStyles4 ul{
     margin-left: 50px;
-}
-
-#fenderStylesImg4 {
+}#fenderStylesImg4{
     width: 180px;
     float: left;
-}
-
-.fenderStylesText4 {
+}.fenderStylesText4{
     float: right;
     padding-bottom: 20px;
-}
-
-#sternDrive {
+}#sternDrive{
     margin-top: 10px;
-}
-
-div.measure4PontoonSeats {
+}div.measure4PontoonSeats{
     margin-bottom: 30px;
-}
-
-.startSelectingSeats li:first-child+p {
+}.startSelectingSeats li:first-child+p{
     width: 500px;
-}
-
-.measure4PontoonSeats img {
+}.measure4PontoonSeats img{
     width: 550px;
     display: block;
     margin: 20px auto 10px;
-}
-
-.measure4PontoonSeats figcaption {
+}.measure4PontoonSeats figcaption{
     text-align: center;
     margin-bottom: 30px;
-}
-
-.measure4PontoonSeats div.ind40 ol:first-child {
+}.measure4PontoonSeats div.ind40 ol:first-child{
     list-style-type: upper-alpha;
-}
-
-#seatStyleGuide a {
+}#seatStyleGuide a{
     color: #000;
     font-weight: 600;
     text-decoration: none;
-}
-
-#seatStyleGuide a:hover {
+}#seatStyleGuide a:hover{
     color: #9C1B21;
     text-decoration: underline;
-}
-
-#seatStyleGuide img {
+}#seatStyleGuide img{
     height: 130px;
-}
-
-#seatStyleGuide table,
-#choosingSeatPedestals table {
+}#seatStyleGuide table, #choosingSeatPedestals table{
     margin: 10px auto 40px;
-}
-
-#seatStyleGuide td:first-child {
+}#seatStyleGuide td:first-child{
     width: 200px;
     border-right: none;
-}
-
-#seatStyleGuide td:nth-child(2) {
+}#seatStyleGuide td:nth-child(2){
     width: 128px;
     border-left: none;
     font-weight: 600;
     text-align: left;
-}
-
-#seatStyleGuide td:last-child,
-.pedestalRatings td:last-child {
+}#seatStyleGuide td:last-child, .pedestalRatings td:last-child{
     text-align: left;
-}
-
-ul.installingBoatSeats {
+}ul.installingBoatSeats{
     list-style-type: none;
-}
-
-ul.installingBoatSeats>li {
+}ul.installingBoatSeats>li{
     font-weight: 600;
     font-size: 15px !important;
-}
-
-ul.installingBoatSeats>li:not(:first-child) {
+}ul.installingBoatSeats>li:not(:first-child){
     margin-top: 40px;
-}
-
-ul.installingBoatSeats li+a,
-ul.installingBoatSeats li+iframe,
-ul.installingBoatSeats ul,
-#measureRadiusCorner img,
-#measureRadiusCorner ul,
-.measurePontoonSeat ol li,
-.measurePontoonSeat ol img {
+}ul.installingBoatSeats li+a, ul.installingBoatSeats li+iframe, ul.installingBoatSeats ul, #measureRadiusCorner img, #measureRadiusCorner ul, .measurePontoonSeat ol li, .measurePontoonSeat ol img{
     display: inline-block;
     vertical-align: middle;
-}
-
-ul.installingBoatSeats li+iframe {
+}ul.installingBoatSeats li+iframe{
     margin-left: 20px;
-}
-
-.measurePontoonSeat ol li {
+}.measurePontoonSeat ol li{
     width: 50%;
-}
-
-#measureRadiusCorner h5 {
+}#measureRadiusCorner h5{
     margin: 0px 0px 20px 0px;
     text-align: center;
-}
-
-#measureRadiusCorner ul {
+}#measureRadiusCorner ul{
     width: 50%;
-}
-
-#measureRadiusCorner li {
+}#measureRadiusCorner li{
     margin: 10px 0px 10px 10px
-}
-
-#choosingSeatPedestals img {
+}#choosingSeatPedestals img{
     display: block;
     margin: 0px auto 30px;
-}
-
-#choosingSeatPedestals td {
+}#choosingSeatPedestals td{
     text-align: left;
-}
-
-#seatVinylCare h5 {
+}#seatVinylCare h5{
     margin: 0px 0px 5px 0px;
-}
-
-#seatVinylCare ul {
+}#seatVinylCare ul{
     list-style-type: none;
-}
-
-.ParentBrands figure {
+}.ParentBrands figure{
     max-width: 205px;
     margin: 0px 17px 20px;
-}
-
-.ParentBrands figcaption {
+}.ParentBrands figcaption{
     text-align: center;
-}
-
-div.helpPageCatHeadingImg {
+}div.helpPageCatHeadingImg{
     position: relative;
     margin-top: 70px;
-}
-
-.helpPageCatHeadingImg h3 {
+}.helpPageCatHeadingImg h3{
     font-size: 40px !important;
     font-weight: 600 !important;
     color: #96C0E6 !important;
     text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
-}
-
-div#landingPage {
+}div#landingPage{
     position: relative;
-}
-
-#landingPageLeft,
-#landingPageRight {
+}#landingPageLeft, #landingPageRight{
     display: inline-block;
     margin: 0px 10px 25px 0px;
     vertical-align: top;
-}
-
-.landingPageLeft {
+}.landingPageLeft{
     float: left;
     margin: 0px;
-}
-
-.PowerTechSubcategories #landingPageLeft,
-.PowerTechCategory #landingPageLeft {
+}.PowerTechSubcategories #landingPageLeft, .PowerTechCategory #landingPageLeft{
     margin-left: 45px;
-}
-
-.PowerTechSubcategories #landingPageRight,
-.PowerTechCategory #landingPageRight {
+}.PowerTechSubcategories #landingPageRight, .PowerTechCategory #landingPageRight{
     background: #F5F2EB;
     border: 2px solid #8C8374;
-}
-
-.PowerTechSubcategories #landingPageRight img,
-.PowerTechCategory #landingPageRight img {
+}.PowerTechSubcategories #landingPageRight img, .PowerTechCategory #landingPageRight img{
     position: static;
     display: block;
     margin: 0px auto;
-}
-
-#landingPageRight {
+}#landingPageRight{
     border: 1px solid #000000;
     background: linear-gradient(#084586, #084586);
     background: -webkit-linear-gradient(#084586, #084586);
@@ -963,181 +524,120 @@ div#landingPage {
     border-radius: 8px;
     padding-top: 10px;
     margin: 0px 0px 25px 8px;
-}
-
-#landingPage h2 {
+}#landingPage h2{
     font-size: 32px;
     text-align: center;
-}
-
-#landingPageRight h2 {
+}#landingPageRight h2{
     color: #ffffff;
     font-size: 30px;
     text-shadow: 2px 2px #000000;
-}
-
-.PowerTechSubcategories #landingPageRight h2 {
+}.PowerTechSubcategories #landingPageRight h2{
     color: #000;
     text-shadow: none;
     margin-bottom: 0px;
-}
-
-.PowerTechSubcategories h5 {
+}.PowerTechSubcategories h5{
     font-size: 25px;
     text-align: center;
     color: rgb(0, 0, 0);
     margin: 25px;
-}
-
-#landingPageRight h3 {
+}#landingPageRight h3{
     color: #000;
     font-size: 20px;
     margin: 0px 20px;
-}
-
-#landingPageRight hr {
+}#landingPageRight hr{
     background: #96C0E6;
     border: #96C0E6;
     margin: 10px auto;
-}
-
-#landingPageRight p {
+}#landingPageRight p{
     text-align: center;
     color: #ffffff;
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 10px;
-}
-
-#landingPageRight a {
+}#landingPageRight a{
     color: #ffffff;
     font-size: 15px;
     font-weight: 600;
-}
-
-#landingPageRight a:hover {
+}#landingPageRight a:hover{
     color: #96C0E6;
-}
-
-.PowerTechCategory #landingPageRight ul li a {
+}.PowerTechCategory #landingPageRight ul li a{
     color: #000;
     text-decoration: none;
-}
-
-.PowerTechCategory #landingPageRight ul li a:hover {
+}.PowerTechCategory #landingPageRight ul li a:hover{
     color: #9C1B21;
-}
-
-#landingPageRight p+ul li:last-child {
+}#landingPageRight p+ul li:last-child{
     margin-bottom: 20px;
-}
-
-#landingPageRight p+ul li {
+}#landingPageRight p+ul li{
     width: 40%;
     float: left;
     margin-left: 26px;
     font-size: 15px;
-
     color: #ffffff;
-}
-
-#landingPageRight img+ul li {
+}#landingPageRight img+ul li{
     font-size: 15px;
     color: #000;
     font-weight: 600;
     margin-left: 20px;
-}
-
-#landingPage div.landingPageFinders {
+}#landingPage div.landingPageFinders{
     display: block;
     margin: 0px auto 40px;
     height: 600px;
-}
-
-#landingPage .CarverCoverFinder,
-#landingPage .WestlandCoverFinder {
+}#landingPage .CarverCoverFinder, #landingPage .WestlandCoverFinder{
     border: 1px solid #000000;
     border-radius: 8px;
     height: 500px;
     width: 330px;
     margin: 15px 0px 15px 78px;
-}
-
-#landingPage .landingPageFinders img {
+}#landingPage .landingPageFinders img{
     display: block;
     margin: 6px auto;
-}
-
-#landingPage iframe {
+}#landingPage iframe{
     position: relative;
     margin: 0px 0px 0px 20px;
-}
-
-#landingPage iframe+h3 {
+}#landingPage iframe+h3{
     padding-left: 30px;
     color: #000000;
     margin-top: 4px;
-}
-
-#landingPage h3+ul {
+}#landingPage h3+ul{
     list-style-type: none;
     margin-left: 40px;
-}
-
-#landingPage h3+ul li {
+}#landingPage h3+ul li{
     line-height: 1.3;
-}
-
-div.landingPageFinders+h2,
-h2.WhyShopSavvy {
+}div.landingPageFinders+h2, h2.WhyShopSavvy{
     background: #084586;
     color: #ffffff !important;
     margin: 20px auto !important;
     width: 83%;
-}
-
-#landingPage h2+ul li {
+}#landingPage h2+ul li{
     list-style-type: none;
     width: 42%;
     float: left;
     margin-left: 50px;
     font-size: 15px;
-}
-
-#landingPage h2+ul li:last-child {
+}#landingPage h2+ul li:last-child{
     margin-bottom: 40px;
-}
-
-#landingPage .catPageBrandCompare li {
+}#landingPage .catPageBrandCompare li{
     margin-left: 45px;
-}
-
-#landingPage .catPageBrandCompare3 li {
+}#landingPage .catPageBrandCompare3 li{
     margin-left: 20px;
-}
-.PageContent table:not(#fabricComparisonTable):not(#biminiFabricComparisonTable), .helpGuideTable, .DeIcerFeaturesTable, .DeIcerCompareTable, .DeIcerBrandTable, .boatStyleTable {
+}.PageContent table:not(#fabricComparisonTable):not(#biminiFabricComparisonTable), .helpGuideTable, .DeIcerFeaturesTable, .DeIcerCompareTable, .DeIcerBrandTable, .boatStyleTable{
     text-align: center;
     border-collapse: collapse;
     width: 100%;
     margin: 0 auto;
-}
-table.helpGuideTable:last-child {
+}table.helpGuideTable:last-child{
     margin-bottom: 30px;
-}
-.helpGuideTable th, .DeIcerFeaturesTable th, .TableTitle th, td.tdLiketh, .boatStyleTable th, .ProductDescriptionContainer th {
+}.helpGuideTable th, .DeIcerFeaturesTable th, .TableTitle th, td.tdLiketh, .boatStyleTable th, .ProductDescriptionContainer th{
     background-color: #084586;
     font-weight: 700;
     color: white;
     padding: 4px 8px 4px 8px;
-}
-.helpGuideTableColOne {
+}.helpGuideTableColOne{
     text-align: left;
     font-weight: 700;
     color: black;
-}
-.PageContent td, .helpGuideTable td, .DeIcerCompareTable td, .boatStyleTable td, .ProductDescriptionContainer td {
+}.PageContent td, .helpGuideTable td, .DeIcerCompareTable td, .boatStyleTable td, .ProductDescriptionContainer td{
     font-size: 15px;
     color: #000;
-    //border: 1px solid #000;
     padding: 4px 6px 4px 6px;
 }

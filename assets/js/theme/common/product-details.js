@@ -28,7 +28,7 @@ export default class ProductDetails {
             this.setProductVariant();
         });
 
-        const fabricTypes = ["Sunbrella", "Sun-DURA", "Poly-Guard", "Double Duck", "Boat Duck", "Camouflage", "Sharkskin Plus", "Sharkskin Supreme", "Westland"];
+        const fabricTypes = ["Sunbrella", "Sun-DURA", "Poly-Guard", "Double Duck", "Boat Duck", "Camouflage", "Sharkskin Plus", "Sharkskin Supreme", "Westland", "Vinyl"];
 
         $('#fabric-type select').on('change', function (e) {
             const value = e.target.value;
