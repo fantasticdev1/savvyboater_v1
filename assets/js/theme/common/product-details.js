@@ -28,6 +28,13 @@ export default class ProductDetails {
             this.setProductVariant();
         });
 
+        let isBiminiTops = false;
+        $.each($('li.breadcrumb'), (id, el) => {
+            if ($(el).find('span')[0].innerText === 'Bimini Tops') {
+                isBiminiTops = true;
+            }
+        });
+
         const fabricTypes = ["Sunbrella", "Sun-DURA", "Poly-Guard", "Double Duck", "Boat Duck", "Camouflage", "Sharkskin Plus", "Sharkskin Supreme", "Westland", "Vinyl"];
 
         $('#fabric-type select').on('change', function (e) {
@@ -46,9 +53,17 @@ export default class ProductDetails {
 
                 $.each($('#fabric-color').find('.form-radio'), (id, value) => {
                     if ($(value).attr('data-product-attribute-label').includes(selectedFabricType)) {
+
                         $(value).removeClass('hidden');
                         $(`[data-product-attribute-value="${$(value).val()}"]`).removeClass('hidden');
                         $(`[data-product-attribute-value="${$(value).val()}"]`).addClass('show');
+
+                        if (selectedFabricType === "Sunbrella" && !isBiminiTops && $(value).attr('data-product-attribute-label').includes('Bimini Tops')) {
+                            $(value).addClass('hidden');
+                            $(`[data-product-attribute-value="${$(value).val()}"]`).removeClass('show');
+                            $(`[data-product-attribute-value="${$(value).val()}"]`).addClass('hidden');
+                        }
+                        
                     } else {
                         $(value).addClass('hidden');
                         $(`[data-product-attribute-value="${$(value).val()}"]`).removeClass('show');
